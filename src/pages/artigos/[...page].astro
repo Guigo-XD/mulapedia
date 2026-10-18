@@ -1,6 +1,15 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import {
+  FileText,
+  Trophy,
+  Crown,
+  Crosshair,
+  Mic,
+  Heart,
+  Gamepad2,
+} from '@lucide/astro';
 
 export async function getStaticPaths({ paginate }) {
   const pages = (await getCollection('pages')).sort((a, b) => {
@@ -8,11 +17,21 @@ export async function getStaticPaths({ paginate }) {
     const db = b.data.updatedDate ? new Date(b.data.updatedDate).getTime() : 0;
     return db - da;
   });
-
   return paginate(pages, { pageSize: 12 });
 }
 
 const { page } = Astro.props;
+
+function SectionIcon({ section }: { section?: string }) {
+  const props = { size: 28, strokeWidth: 2, class: 'article-icon' };
+  if (section === 'G3X') return Gamepad2;
+  if (section === 'Kings League') return Crown;
+  if (section === 'CS2') return Crosshair;
+  if (section === 'Gaules') return Mic;
+  if (section === 'Tribo') return Heart;
+  return FileText;
+}
+---
 ---
 
 <Layout
@@ -22,38 +41,33 @@ const { page } = Astro.props;
   <button type="button" class="back-btn" id="btn-voltar">← Voltar</button>
 
   <article class="content-page" data-pagefind-body>
-    <h1>📄 Todos os artigos</h1>
+    <h1><FileText size={30} class="nav-icon" /> Todos os artigos</h1>
     <p class="subtitle">
       Página {page.currentPage} de {page.lastPage}
       · {page.total} artigo{page.total === 1 ? '' : 's'}
     </p>
 
     <div class="articles-grid" style="margin-top: 24px;">
-      {page.data.map((item) => (
-        <a href={`/${item.id}`} class="article-card">
-          <div
-            class="article-img"
-            style="background:linear-gradient(135deg,#1e293b,#0f172a);"
-          >
-            {item.data.section === 'G3X' && '🎮'}
-            {item.data.section === 'Kings League' && '👑'}
-            {item.data.section === 'CS2' && '🔫'}
-            {item.data.section === 'Gaules' && '🎙️'}
-            {item.data.section === 'Tribo' && '❤️'}
-            {!item.data.section && '📄'}
+  {page.data.map((item) => {
+    const Icon = SectionIcon({ section: item.data.section });
+    return (
+      <a href={`/${item.id}`} class="article-card">
+        <div class="article-img article-img--icon">
+          <Icon size={28} stroke-width={2} class="article-icon" />
+        </div>
+        <div class="article-body">
+          <h5>{item.data.title}</h5>
+          <p>{item.data.description || 'Artigo da MulaPédia'}</p>
+          <div class="article-date">
+            {item.data.section || 'Geral'}
+            {item.data.updatedDate &&
+              ` · ${new Date(item.data.updatedDate).toLocaleDateString('pt-BR')}`}
           </div>
-          <div class="article-body">
-            <h5>{item.data.title}</h5>
-            <p>{item.data.description || 'Artigo da MulaPédia'}</p>
-            <div class="article-date">
-              {item.data.section || 'Geral'}
-              {item.data.updatedDate &&
-                ` · ${new Date(item.data.updatedDate).toLocaleDateString('pt-BR')}`}
-            </div>
-          </div>
-        </a>
-      ))}
-    </div>
+        </div>
+      </a>
+    );
+  })}
+</div>
 
     <!-- Paginação -->
     {page.lastPage > 1 && (

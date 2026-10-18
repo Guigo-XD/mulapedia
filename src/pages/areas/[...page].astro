@@ -1,11 +1,19 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import {
+  Gamepad2,
+  Crown,
+  Crosshair,
+  Mic,
+  Heart,
+  Flag,
+} from '@lucide/astro';
 
 export async function getStaticPaths({ paginate }) {
   const allAreas = [
     {
+      id: 'g3x',
       title: 'G3X',
-      emoji: '🎮',
       description: 'História, elencos, títulos e resultados do time do povo.',
       href: '/g3x/historia',
       links: [
@@ -14,24 +22,26 @@ export async function getStaticPaths({ paginate }) {
         { label: 'Elenco Kings', href: '/g3x/elenco' },
         { label: 'Resultados', href: '/g3x/resultados' },
         { label: 'Títulos', href: '/g3x/titulos' },
+        { label: 'Racing', href: '/g3x/racing' },
       ],
       gradient: 'linear-gradient(135deg,#7f1d1d,#1e1b4b)',
     },
     {
+      id: 'kings',
       title: 'Kings League',
-      emoji: '👑',
       description: 'Futebol 7, regras, campanhas e o título mundial de 2026.',
       href: '/kings-league/overview',
       links: [
         { label: 'Visão geral', href: '/kings-league/overview' },
+        { label: 'Regras', href: '/kings-league/regras' },
         { label: 'Elenco G3X', href: '/g3x/elenco' },
-        { label: 'Resultados', href: '/g3x/resultados' },
+        { label: 'Resultados', href: '/g3x/resultados-kings' },
       ],
       gradient: 'linear-gradient(135deg,#14532d,#1e3a8a)',
     },
     {
+      id: 'cs2',
       title: 'Counter-Strike 2',
-      emoji: '🔫',
       description: 'CS2, mapas, Dream Team e as lives que movem a Tribo.',
       href: '/cs2/overview',
       links: [
@@ -42,8 +52,8 @@ export async function getStaticPaths({ paginate }) {
       gradient: 'linear-gradient(135deg,#1e3a8a,#0f172a)',
     },
     {
+      id: 'queens',
       title: 'Queens League',
-      emoji: '👑',
       description: 'Projeto G3X na Queens League — elenco e estrutura.',
       href: '/g3x/elenco-queens',
       links: [
@@ -53,8 +63,8 @@ export async function getStaticPaths({ paginate }) {
       gradient: 'linear-gradient(135deg,#4c1d95,#831843)',
     },
     {
+      id: 'gaules',
       title: 'Gaules',
-      emoji: '🎙️',
       description: 'Biografia do líder da Tribo — do CS 1.6 ao título mundial.',
       href: '/gaules/biografia',
       links: [
@@ -64,15 +74,15 @@ export async function getStaticPaths({ paginate }) {
       gradient: 'linear-gradient(135deg,#1e3a8a,#312e81)',
     },
     {
+      id: 'tribo',
       title: 'Universo da Tribo',
-      emoji: '❤️',
       description: 'Cultura, streamers, bordões, Sócio Sofredor e comunidade.',
       href: '/tribo/cultura',
       links: [
         { label: 'Cultura', href: '/tribo/cultura' },
+        { label: 'FAQ', href: '/tribo/faq' },
         { label: 'Glossário', href: '/glossario' },
         { label: 'Sócio Sofredor', href: '/tribo/socio-sofredor' },
-        { label: 'Artigos', href: '/artigos' },
       ],
       gradient: 'linear-gradient(135deg,#312e81,#1e1b4b)',
     },
@@ -101,26 +111,33 @@ const { page } = Astro.props;
       class="cards-grid"
       style="margin-top: 24px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));"
     >
-      {page.data.map((area) => (
-        <div class="card">
-          <a
-            href={area.href}
-            class="card-img-link"
-            style={`background:${area.gradient}; height:100px; display:flex; align-items:center; justify-content:center; font-size:40px; text-decoration:none;`}
-          >
-            <span>{area.emoji}</span>
-          </a>
-          <div class="card-body">
-            <a href={area.href}><h4>{area.title}</h4></a>
-            <p>{area.description}</p>
-            <div class="card-links">
-              {area.links.map((link) => (
-                <a href={link.href}>{link.label} →</a>
-              ))}
-            </div>
-          </div>
+    {
+  page.data.map((area) => (
+    <div class="card">
+      <a
+        href={area.href}
+        class="card-img-link card-img--icon"
+        style={`background:${area.gradient};`}
+      >
+        {area.id === 'g3x' && <Gamepad2 size={36} stroke-width={2} class="area-icon" />}
+        {area.id === 'kings' && <Crown size={36} stroke-width={2} class="area-icon" />}
+        {area.id === 'cs2' && <Crosshair size={36} stroke-width={2} class="area-icon" />}
+        {area.id === 'queens' && <Crown size={36} stroke-width={2} class="area-icon" />}
+        {area.id === 'gaules' && <Mic size={36} stroke-width={2} class="area-icon" />}
+        {area.id === 'tribo' && <Heart size={36} stroke-width={2} class="area-icon" />}
+      </a>
+      <div class="card-body">
+        <a href={area.href}><h4>{area.title}</h4></a>
+        <p>{area.description}</p>
+        <div class="card-links">
+          {area.links.map((link) => (
+            <a href={link.href}>{link.label} →</a>
+          ))}
         </div>
-      ))}
+      </div>
+    </div>
+  ))
+}
     </div>
 
     {page.lastPage > 1 && (

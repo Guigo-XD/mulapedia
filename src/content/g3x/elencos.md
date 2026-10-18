@@ -68,15 +68,8 @@ updatedDate: 2026-10-15
 
 </div>
 
----
 
-## Resumo rápido
 
-|  | Página | Foco |
-|------------|--------|------|
-| **Kings League** | [Elenco G3X FC](/g3x/elenco) | Fut7 · Kings Cup · Mundial 2026 |
-| **CS2** | [Elenco CS2](/g3x/elenco-cs2) | Line-up / Dream Team |
-| **Queens League** | [Elenco Queens](/g3x/elenco-queens) | Equipe feminina / projeto Queens |
 
 ---
 

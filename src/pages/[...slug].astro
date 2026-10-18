@@ -38,6 +38,10 @@ const LABELS: Record<string, string> = {
   'socio-sofredor': 'Sócio Sofredor',
   glossario: 'Glossário',
   racing: 'G3X Racing',
+'resultados-kings': 'Resultados Kings',
+'resultados-queens': 'Resultados Queens',
+'resultados-cs2': 'Resultados CS2',
+'resultados-racing': 'Resultados Racing',
 };
 
 /**
@@ -131,11 +135,5 @@ const breadcrumbs = [
   }
 </script>
 
-  <article class="content-page" data-pagefind-body>
-    <h1>{page.data.title}</h1>
-    {page.data.description && (
-      <p class="subtitle">{page.data.description}</p>
-    )}
-    <Content />
-  </article>
+ 
 </Layout>

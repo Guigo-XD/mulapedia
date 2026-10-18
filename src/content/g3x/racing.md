@@ -26,11 +26,29 @@ Para a Tribo, é mais um capítulo do mesmo lema: levar a energia da comunidade 
 
 O nome não é coincidência. A **g3nerationX** nasceu no CS 1.6 em 2001. Décadas depois, Gaules reutiliza a marca em novos territórios:
 
-| Projeto | Área |
-|---------|------|
-| g3nerationX (2001) | Counter-Strike |
-| G3X FC | Kings League (fut7) |
-| **G3X Racing** | Automobilismo |
+
+<table class="wiki-table">
+  <thead>
+    <tr>
+      <th>Projeto</th>
+      <th>Área</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>g3nerationX (2001)</strong></td>
+      <td>Counter-Strike</td>
+    </tr>
+    <tr>
+      <td><strong>G3X FC</strong></td>
+      <td>Kings League (fut7)</td>
+    </tr>
+    <tr>
+      <td><strong>G3X Racing</strong></td>
+      <td>Automobilismo</td>
+    </tr>
+  </tbody>
+</table>
 
 No anúncio, a mensagem foi direta: *“A G3X Racing está de volta — só que nas pistas de todo o Brasil.”*
 

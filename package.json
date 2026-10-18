@@ -12,6 +12,7 @@
     "search:index": "astro build && pagefind --site dist && rm -rf public/pagefind && cp -r dist/pagefind public/pagefind"
   },
   "dependencies": {
+    "@lucide/astro": "^1.59.0",
     "astro": "^7.3.8"
   },
   "devDependencies": {
