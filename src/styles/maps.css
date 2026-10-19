@@ -1,0 +1,131 @@
+/* Mapas CS2 */
+.map-block {
+  margin: 28px 0 36px;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #0f172a 0%, #0a0f1a 100%);
+}
+
+.map-block-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.map-block-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #f1f5f9;
+}
+
+.map-tag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.18);
+  color: #93c5fd;
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .map-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.map-minimap {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  background: #0b1220;
+  margin: 0 auto;
+}
+
+.map-info h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.map-info p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.map-info ul {
+  margin: 0 0 12px;
+  padding-left: 1.2em;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.map-callouts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.map-callouts span {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+}
+
+.map-placeholder {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px dashed #334155;
+  background: linear-gradient(160deg, #0f172a 0%, #0a0f1a 100%);
+  color: #64748b;
+  text-align: center;
+  padding: 16px;
+}
+
+.map-placeholder-icon {
+  font-size: 28px;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.map-placeholder-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.map-placeholder-hint {
+  font-size: 11px;
+  color: #475569;
+}

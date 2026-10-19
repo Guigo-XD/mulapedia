@@ -12,44 +12,99 @@ updatedDate: 2026-10-17
 
 <p>
   <a href="/g3x/historia">História</a> ·
-  <a href="/g3x/linha-do-tempo">Linha do tempo</a> ·
   <a href="/g3x/resultados">Resultados</a> ·
   <a href="/g3x/elencos">Elencos</a>
 </p>
 
-## Em destaque
 
-<div class="matches-grid">
+<h2 id="galeria">Galeria por ano</h2>
 
-  <div class="match-card win final">
-    <div class="match-competition">Kings World Cup Clubs · 2026</div>
-    <div class="match-teams">
-      <div class="match-team home">G3X FC</div>
-      <div class="match-score">🏆</div>
-      <div class="match-team away">Campeão</div>
-    </div>
-    <div class="match-meta">
-      <span>Milão · campanha invicta (5–0)</span>
-      <span class="match-badge gold">Mundial</span>
-    </div>
-  </div>
+<div class="titles-gallery">
 
-  <div class="match-card win">
-    <div class="match-competition">Counter-Strike · 2007</div>
-    <div class="match-teams">
-      <div class="match-team home">MIBR</div>
-      <div class="match-score">🏆</div>
-      <div class="match-team away">Mundial</div>
-    </div>
-    <div class="match-meta">
-      <span>Gaules técnico · DreamHack Winter</span>
-      <span class="match-badge gold">1º mundial BR</span>
-    </div>
-  </div>
+  <a href="/g3x/resultados-kings" class="title-year-card featured">
+    <span class="title-year-badge">Destaque</span>
+    <div class="title-year-number">2026</div>
+    <div class="title-year-trophy">🏆</div>
+    <h3 class="title-year-name">Kings World Cup Clubs</h3>
+    <p class="title-year-meta">
+      G3X FC campeão em Milão · campanha invicta 5–0 · final 9×5 Alpak FC
+    </p>
+    <span class="title-year-link">Ver campanha →</span>
+  </a>
+
+  <a href="/g3x/resultados-kings" class="title-year-card">
+    <span class="title-year-badge">Vice</span>
+    <div class="title-year-number">2024</div>
+    <div class="title-year-trophy">🥈</div>
+    <h3 class="title-year-name">Mundial de Clubes</h3>
+    <p class="title-year-meta">
+      G3X FC finalista · derrota para o Porcinos FC na decisão
+    </p>
+    <span class="title-year-link">Ver campanha →</span>
+  </a>
+
+  <a href="/gaules/biografia" class="title-year-card featured">
+    <span class="title-year-badge">CS</span>
+    <div class="title-year-number">2007</div>
+    <div class="title-year-trophy">🏆</div>
+    <h3 class="title-year-name">DreamHack Winter</h3>
+    <p class="title-year-meta">
+      Gaules técnico da MIBR · 1º título mundial brasileiro de Counter-Strike
+    </p>
+    <span class="title-year-link">Biografia →</span>
+  </a>
+
+  <a href="/g3x/historia" class="title-year-card">
+    <span class="title-year-badge">Origem</span>
+    <div class="title-year-number">2001</div>
+    <div class="title-year-trophy">📜</div>
+    <h3 class="title-year-name">Fundação g3nerationX</h3>
+    <p class="title-year-meta">
+      Nascimento da marca G3X no CS 1.6 · projeção nacional e WCG
+    </p>
+    <span class="title-year-link">História →</span>
+  </a>
 
 </div>
 
 ---
+<h2 id="por-ano">Linha de conquistas</h2>
+
+<div class="titles-years">
+
+  <div class="titles-year-row is-gold">
+    <div class="titles-year-label">2026</div>
+    <div class="titles-year-body">
+      <h4>🏆 Campeão mundial — Kings World Cup Clubs</h4>
+      <p>Milão · invicto · Kelvin artilheiro (14) · Andreas MVP · final 9×5 Alpak</p>
+    </div>
+  </div>
+
+  <div class="titles-year-row">
+    <div class="titles-year-label">2024</div>
+    <div class="titles-year-body">
+      <h4>🥈 Vice — Mundial de Clubes (1ª edição)</h4>
+      <p>Campanha histórica até a final · derrota para o Porcinos FC</p>
+    </div>
+  </div>
+
+  <div class="titles-year-row is-gold">
+    <div class="titles-year-label">2007</div>
+    <div class="titles-year-body">
+      <h4>🏆 Campeão mundial — Counter-Strike</h4>
+      <p>Gaules técnico · MIBR · DreamHack Winter · marco da linha G3X</p>
+    </div>
+  </div>
+
+  <div class="titles-year-row">
+    <div class="titles-year-label">2001</div>
+    <div class="titles-year-body">
+      <h4>📜 Fundação da g3nerationX</h4>
+      <p>Gaules e a geração que deu nome ao G3X · domínio nacional no CS 1.6</p>
+    </div>
+  </div>
+
+</div>
 
 ## Kings League — G3X FC
 
@@ -144,89 +199,6 @@ updatedDate: 2026-10-17
   <a href="/g3x/elenco">Elenco</a> ·
   <a href="/kings-league/regras">Regras</a>
 </p>
-
----
-
-## Counter-Strike — origem da marca
-
-O nome <strong>G3X</strong> nasce no CS. O título mundial de 2007 veio com a camisa <strong>MIBR</strong>, com Gaules como técnico — marco da linha histórica da casa.
-
-<table class="wiki-table">
-  <thead>
-    <tr>
-      <th>Ano</th>
-      <th>Marco</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>2001</strong></td>
-      <td>Fundação da <strong>g3nerationX</strong>; projeção internacional</td>
-    </tr>
-    <tr>
-      <td><strong>2001–2003</strong></td>
-      <td>Hegemonia no cenário brasileiro de CS 1.6</td>
-    </tr>
-    <tr>
-      <td><strong>2007</strong></td>
-      <td>Gaules técnico da MIBR — <strong>1º título mundial brasileiro de CS</strong></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>
-  <a href="/g3x/resultados-cs2">Resultados CS2</a> ·
-  <a href="/g3x/historia">História</a> ·
-  <a href="/gaules/biografia">Gaules</a>
-</p>
-
----
-
-## Galeria de títulos (resumo)
-
-<div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-
-  <div class="card">
-    <div class="card-body">
-      <h4>🏆 Mundial Kings 2026</h4>
-      <p>G3X FC · Milão · campanha 5–0 · final 9×5 Alpak</p>
-      <div class="card-links">
-        <a href="/g3x/resultados-kings">Ver campanha →</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-body">
-      <h4>🥈 Mundial Kings 2024</h4>
-      <p>G3X FC finalista do Mundial de Clubes inaugural</p>
-      <div class="card-links">
-        <a href="/g3x/linha-do-tempo">Linha do tempo →</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-body">
-      <h4>🏆 Mundial CS 2007</h4>
-      <p>Gaules técnico · MIBR · 1º mundial BR de Counter-Strike</p>
-      <div class="card-links">
-        <a href="/gaules/biografia">Biografia →</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-body">
-      <h4>📜 Era g3x (2001)</h4>
-      <p>Fundação e domínio nacional no CS 1.6</p>
-      <div class="card-links">
-        <a href="/g3x/historia">História →</a>
-      </div>
-    </div>
-  </div>
-
-</div>
 
 ---
 

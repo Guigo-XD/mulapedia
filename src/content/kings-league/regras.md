@@ -2,7 +2,7 @@
 title: "Regras da Kings League"
 description: "Regras oficiais do jogo — campo, fases, cartões secretos, pênalti do presidente e VAR (atualizado 31/08/2026)"
 section: "Kings League"
-updatedDate: 2026-08-31
+updatedDate: 2026-10-18
 ---
 
 <div class="info-box">

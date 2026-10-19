@@ -56,6 +56,8 @@ updatedDate: 2026-10-15
     </div>
   </a>
 
+
+
   <a href="/g3x/racing" class="card" style="text-decoration:none;color:inherit;">
    <div class="card-img-link" style="height:100px;background:linear-gradient(135deg,#4c1d95,#831843);display:flex;align-items:center;justify-content:center;font-size:40px;">
       🏎️
@@ -69,12 +71,11 @@ updatedDate: 2026-10-15
 </div>
 
 
-
-
 ---
 
 ## Links relacionados
 
+  <a href="/g3x/ex-jogadores" class="card">... História de elenco</a>
 - [História do G3X](/g3x/historia)
 - [Resultados](/g3x/resultados)
 - [Kings League](/kings-league/overview)
