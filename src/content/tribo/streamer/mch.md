@@ -31,9 +31,8 @@ updatedDate: 2026-10-15
   <!-- BIO + DESTAQUES (direita) -->
   <div class="player-profile-body">
     <h2>Biografia</h2>
-    <p>
-      -
-    </p>
+   <h2>Quem é</h2>
+    
     <p>
       -
     </p>

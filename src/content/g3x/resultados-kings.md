@@ -26,16 +26,16 @@ updatedDate: 2026-10-19
 
 <div class="matches-grid">
 
-  <div class="match-card">
-    <div class="match-competition">Próximos jogos</div>
+  <div class="match-card loss">
+    <div class="match-competition">1° rodada</div>
     <div class="match-teams">
       <div class="match-team home">G3X FC</div>
-      <div class="match-score">—<span class="x">×</span> —</div>
+      <div class="match-score">3<span class="x">×</span>4</div>
       <div class="match-team away">Dendele</div>
     </div>
     <div class="match-meta">
       <span>19-Out 2026 - 21:00h</span>
-      <span class="match-badge gray">-</span>
+         <div class="match-meta"><span class="match-badge">Derrota</span></div>
     </div>
   </div>
 

@@ -1,7 +1,7 @@
 ---
 import Search from "../components/Search.astro";
 import "../styles/global.css";
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
 import {
   Home,
@@ -44,7 +44,7 @@ const {
   showSidebars = true,
 } = Astro.props;
 
-const latestRight = (await getCollection('pages'))
+const latestRight = (await getCollection("pages"))
   .sort((a, b) => {
     const da = a.data.updatedDate ? new Date(a.data.updatedDate).getTime() : 0;
     const db = b.data.updatedDate ? new Date(b.data.updatedDate).getTime() : 0;
@@ -208,93 +208,104 @@ const currentPath = Astro.url.pathname;
       </main>
 
       <!-- Right Sidebar -->
-     {
-  showSidebars && (
-    <aside class="sidebar-right">
-      <div class="sidebar-title">
-        <Star size={15} stroke-width={2} />
-        <span>Em destaque</span>
-      </div>
+      {
+        showSidebars && (
+          <aside class="sidebar-right">
+            <div class="sidebar-title">
+              <Star size={15} stroke-width={2} />
+              <span>Em destaque</span>
+            </div>
 
-      <a href="/g3x/resultados-kings" class="right-card">
-        <div class="right-card-icon">
-          <Trophy size={18} stroke-width={2} />
-        </div>
-        <div class="right-card-body">
-          <strong>Mundial 2026</strong>
-          <span>G3X FC campeão em Milão — 9×5 Alpak</span>
-        </div>
-      </a>
+            <a href="/g3x/resultados-kings" class="right-card">
+              <div class="right-card-icon">
+                <Trophy size={18} stroke-width={2} />
+              </div>
+              <div class="right-card-body">
+                <strong>Mundial 2026</strong>
+                <span>G3X FC campeão em Milão — 9×5 Alpak</span>
+              </div>
+            </a>
 
-      <a href="/gaules/biografia" class="right-card">
-        <div class="right-card-icon">
-          <Mic size={18} stroke-width={2} />
-        </div>
-        <div class="right-card-body">
-          <strong>Gaules</strong>
-          <span>Biografia do líder da Tribo</span>
-        </div>
-      </a>
+            <a href="/gaules/biografia" class="right-card">
+              <div class="right-card-icon">
+                <Mic size={18} stroke-width={2} />
+              </div>
+              <div class="right-card-body">
+                <strong>Gaules</strong>
+                <span>Biografia do líder da Tribo</span>
+              </div>
+            </a>
 
-      <a href="/tribo/faq" class="right-card">
-        <div class="right-card-icon">
-          <HelpCircle size={18} stroke-width={2} />
-        </div>
-        <div class="right-card-body">
-          <strong>FAQ</strong>
-          <span>Perguntas frequentes da comunidade</span>
-        </div>
-      </a>
+            <a href="/tribo/faq" class="right-card">
+              <div class="right-card-icon">
+                <HelpCircle size={18} stroke-width={2} />
+              </div>
+              <div class="right-card-body">
+                <strong>FAQ</strong>
+                <span>Perguntas frequentes da comunidade</span>
+              </div>
+            </a>
 
-      <a href="/g3x/elencos" class="right-card">
-        <div class="right-card-icon">
-          <Users size={18} stroke-width={2} />
-        </div>
-        <div class="right-card-body">
-          <strong>Elencos</strong>
-          <span>Kings · CS2 · Queens</span>
-        </div>
-      </a>
+            <a href="/g3x/elencos" class="right-card">
+              <div class="right-card-icon">
+                <Users size={18} stroke-width={2} />
+              </div>
+              <div class="right-card-body">
+                <strong>Elencos</strong>
+                <span>Kings · CS2 · Queens</span>
+              </div>
+            </a>
 
-      <div class="sidebar-title" style="margin-top:22px;">
-        <FileText size={15} stroke-width={2} />
-        <span>Recentes</span>
-      </div>
+            <div class="sidebar-title" style="margin-top:22px;">
+              <FileText size={15} stroke-width={2} />
+              <span>Recentes</span>
+            </div>
 
-      <div class="right-list">
-        {latestRight.map((item) => (
-          <a href={`/${item.id}`} class="right-list-item">
-            <span class="right-list-title">{item.data.title}</span>
-            <span class="right-list-meta">{item.data.section || 'Geral'}</span>
-          </a>
-        ))}
-      </div>
+            <div class="right-list">
+              {latestRight.map((item) => (
+                <a href={`/${item.id}`} class="right-list-item">
+                  <span class="right-list-title">{item.data.title}</span>
+                  <span class="right-list-meta">
+                    {item.data.section || "Geral"}
+                  </span>
+                </a>
+              ))}
+            </div>
 
-      <a href="/artigos" class="right-more">
-        Ver todos os artigos →
-      </a>
+            <a href="/artigos" class="right-more">
+              Ver todos os artigos →
+            </a>
 
-      <div class="sidebar-title" style="margin-top:22px;">
-        <Crown size={15} stroke-width={2} />
-        <span>Atalhos</span>
-      </div>
+            <div class="sidebar-title" style="margin-top:22px;">
+              <Crown size={15} stroke-width={2} />
+              <span>Atalhos</span>
+            </div>
 
-      <div class="right-shortcuts">
-        <a href="/g3x/resultados">Resultados</a>
-        <a href="/g3x/titulos">Títulos</a>
-        <a href="/kings-league/regras">Regras Kings</a>
-        <a href="/g3x/racing">Racing</a>
-        <a href="/glossario">Glossário</a>
-        <a href="/tribo/socio-sofredor">Sócio Sofredor</a>
-      </div>
-    </aside>
-  )
-}
+            <div class="right-shortcuts">
+              <a href="/g3x/resultados">Resultados</a>
+              <a href="/g3x/titulos">Títulos</a>
+              <a href="/kings-league/regras">Regras Kings</a>
+              <a href="/g3x/racing">Racing</a>
+              <a href="/glossario">Glossário</a>
+              <a href="/tribo/socio-sofredor">Sócio Sofredor</a>
+            </div>
+          </aside>
+        )
+      }
     </div>
 
     <footer class="footer">
       <div style="margin-bottom:8px;">
         <strong>MulaPédia</strong> — Conhecimento de toda a Tribo
+      </div>
+      <div class="footer-inner">      
+        <nav class="footer-nav">
+          <a href="/sobre">Sobre</a>
+          <a href="/changelog">Changelog</a>
+          <a href="/tribo/faq">FAQ</a>
+          <a href="/tribo/streamers">Streamers</a>
+          <a href="/g3x/resultados">Resultados</a>
+        </nav>
       </div>
       <div style="font-size:12px;opacity:0.75;">
         👑 Feita pela comunidade, para a comunidade.<br />
@@ -302,7 +313,7 @@ const currentPath = Astro.url.pathname;
         Projeto conceitual — não oficial.
       </div>
     </footer>
-    
+
     <!-- Menu mobile -->
     <div class="mobile-nav-backdrop" id="menu-backdrop"></div>
 
@@ -351,9 +362,7 @@ const currentPath = Astro.url.pathname;
         <Heart size={16} class="nav-icon" /> Tribo
       </div>
       <a href="/gaules/biografia"><Mic size={18} class="nav-icon" /> Gaules</a>
-      <a href="/tribo/cultura"
-        ><Heart size={18} class="nav-icon" /> Cultura</a
-      >
+      <a href="/tribo/cultura"><Heart size={18} class="nav-icon" /> Cultura</a>
       <a href="/tribo/faq"><HelpCircle size={18} class="nav-icon" /> FAQ</a>
       <a href="/glossario"><BookOpen size={18} class="nav-icon" /> Glossário</a>
       <a href="/tribo/socio-sofredor"

@@ -31,8 +31,10 @@ updatedDate: 2026-10-15
   <!-- BIO + DESTAQUES (direita) -->
   <div class="player-profile-body">
     <h2>Biografia</h2>
-    <p>
-      -
+   <p>
+      <strong>Liminha</strong> é um dos rostos mais marcantes da Tribo.
+      Começou como torcedor apaixonado nas lives e virou figura cativa —
+      resenha, reações e momentos que viram corte em toda a comunidade.
     </p>
     <p>
       -
