@@ -29,8 +29,17 @@ import {
   ChessQueen,
   Car,
   UserRoundGroup,
-  UsersRound,
+  UsersRound,  
+  BuildingComplex,
 } from "@lucide/astro";
+
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+function isActive(href: string) {
+  const h = href.replace(/\/$/, '') || '/';
+  if (h === '/') return pathname === '/';
+  return pathname === h || pathname.startsWith(h + '/');
+}
 
 interface Props {
   title: string;
@@ -102,9 +111,7 @@ const currentPath = Astro.url.pathname;
       <a href="/"><Home size={16} class="nav-icon" /> Início</a>
       <a href="/g3x/historia"><ScrollText size={16} class="nav-icon" /> G3X</a>
       <a href="/g3x/elencos"><Users size={16} class="nav-icon" /> Elencos</a>
-      <a href="/kings-league/overview"
-        ><Crown size={16} class="nav-icon" /> Kings</a
-      >
+      <a href="/kings-league/overview"><Crown size={16} class="nav-icon" /> Kings</a>
       <a href="/cs2/overview"><Crosshair size={16} class="nav-icon" /> CS2</a>
       <a href="/gaules/biografia"><Mic size={16} class="nav-icon" /> Gaules</a>
       <a href="/tribo/cultura"><Heart size={16} class="nav-icon" /> Tribo</a>
@@ -123,13 +130,13 @@ const currentPath = Astro.url.pathname;
               <span>Explorar a Tribo</span>
             </div>
 
-            <a href="/">
+           <a href="/" class:list={['nav-link', { active: isActive('/') }]}>
               <Home size={18} class="nav-icon" /> Início
             </a>
-            <a href="/areas">
+            <a href="/areas"class:list={['nav-link', { active: isActive('/areas') }]}>
               <Star size={18} class="nav-icon" /> Áreas
             </a>
-            <a href="/artigos">
+            <a href="/artigos"class:list={['nav-link', { active: isActive('/artigos') }]}>
               <FileText size={18} class="nav-icon" /> Artigos
             </a>
 
@@ -137,51 +144,54 @@ const currentPath = Astro.url.pathname;
               <Gamepad2 size={16} stroke-width={2} />
               <span>G3X</span>
             </div>
-            <a href="/g3x/historia">
+            <a href="/g3x/historia"class:list={['nav-link', { active: isActive('/g3x/historia') }]}>
               <ScrollText size={18} class="nav-icon" /> História
             </a>
-            <a href="/g3x/elencos">
+            <a href="/g3x/elencos"class:list={['nav-link', { active: isActive('/g3x/elencos') }]}>
               <Users size={18} class="nav-icon" /> Elencos
             </a>
-            <a href="/g3x/resultados">
+            <a href="/g3x/ct"class:list={['nav-link', { active: isActive('/g3x/ct') }]}>
+              <BuildingComplex size={18} class="nav-icon" /> CT do Povo
+            </a>
+            <a href="/g3x/resultados"class:list={['nav-link', { active: isActive('/g3x/resultados') }]}>
               <BarChart3 size={18} class="nav-icon" /> Resultados
             </a>
-            <a href="/g3x/titulos">
+            <a href="/g3x/titulos"class:list={['nav-link', { active: isActive('/g3x/titulos') }]}>
               <Trophy size={18} class="nav-icon" /> Títulos
             </a>
 
             <div class="sidebar-title">
               <Swords size={16} class="nav-icon" /> Competições
             </div>
-            <a href="/kings-league/overview">
+            <a href="/kings-league/overview"class:list={['nav-link', { active: isActive('/kings-league/overview') }]}>
               <Crown size={18} class="nav-icon" /> Kings League
             </a>
-            <a href="/cs2/overview">
+            <a href="/cs2/overview"class:list={['nav-link', { active: isActive('/cs2/overview') }]}>
               <Crosshair size={18} class="nav-icon" /> CS2
             </a>
-            <a href="/g3x/racing">
+            <a href="/g3x/racing"class:list={['nav-link', { active: isActive('/g3x/racing') }]}>
               <Car size={18} class="nav-icon" /> G3X Racing
             </a>
-            <a href="/queens-league/overview">
+            <a href="/queens-league/overview"class:list={['nav-link', { active: isActive('/queens-league/overview') }]}>
               <ChessQueen size={18} class="nav-icon" /> Queens League
             </a>
 
             <div class="sidebar-title">
               <Heart size={16} class="nav-icon" /> Tribo
             </div>
-            <a href="/gaules/biografia">
+            <a href="/gaules/biografia"class:list={['nav-link', { active: isActive('/gaules/biografia') }]}>
               <Mic size={18} class="nav-icon" /> Gaules
             </a>
-            <a href="/tribo/cultura">
+            <a href="/tribo/cultura"class:list={['nav-link', { active: isActive('/tribo/cultura') }]}>
               <Heart size={18} class="nav-icon" /> Cultura
             </a>
-            <a href="/tribo/faq">
+            <a href="/tribo/faq"class:list={['nav-link', { active: isActive('/tribo/faq') }]}>
               <HelpCircle size={18} class="nav-icon" /> FAQ
             </a>
-            <a href="/glossario">
+            <a href="/glossario"class:list={['nav-link', { active: isActive('/glossario') }]}>
               <BookOpen size={18} class="nav-icon" /> Glossário
             </a>
-            <a href="/tribo/socio-sofredor">
+            <a href="/tribo/socio-sofredor"class:list={['nav-link', { active: isActive('/tribo/socio-sofredor') }]}>
               <UserRoundGroup size={18} class="nav-icon" /> Sócio Sofredor
             </a>
 

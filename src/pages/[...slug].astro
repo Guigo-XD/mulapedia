@@ -1,9 +1,9 @@
 ---
-import { getCollection, render } from 'astro:content';
-import Layout from '../layouts/Layout.astro';
+import { getCollection, render } from "astro:content";
+import Layout from "../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  const pages = await getCollection('pages');
+  const pages = await getCollection("pages");
   return pages.map((page) => ({
     params: { slug: page.id },
     props: { page },
@@ -15,36 +15,37 @@ const { Content } = await render(page);
 
 /** Nome amigável de cada segmento */
 const LABELS: Record<string, string> = {
-  g3x: 'G3X',
-  'kings-league': 'Kings League',
-  cs2: 'CS2',
-  gaules: 'Gaules',
-  tribo: 'Tribo',
-  jogadores: 'Jogadores',
-  historia: 'História',
-  elenco: 'Elenco Kings',
-  elencos: 'Elencos',
-  'elenco-cs2': 'Elenco CS2',
-  'elenco-queens': 'Elenco Queens',
-  resultados: 'Resultados',
-  titulos: 'Títulos',
-  'linha-do-tempo': 'Linha do tempo',
-  overview: 'Visão geral',
-  regras: 'Regras',
-  mapas: 'Mapas',
-  biografia: 'Biografia',
-  cultura: 'Cultura',
-  faq: 'FAQ',
-  'socio-sofredor': 'Sócio Sofredor',
-  glossario: 'Glossário',
-  racing: 'G3X Racing',
-'resultados-kings': 'Resultados Kings',
-'resultados-queens': 'Resultados Queens',
-'resultados-cs2': 'Resultados CS2',
-'resultados-racing': 'Resultados Racing',
-'ex-jogadores': 'Ex-jogadores',
-'ex-jogadores-kings': 'Ex-Kings',
-'ex-jogadores-cs': 'Ex-CS',
+  g3x: "G3X",
+  "kings-league": "Kings League",
+  cs2: "CS2",
+  gaules: "Gaules",
+  tribo: "Tribo",
+  jogadores: "Jogadores",
+  historia: "História",
+  elenco: "Elenco Kings",
+  elencos: "Elencos",
+  "elenco-cs2": "Elenco CS2",
+  "elenco-queens": "Elenco Queens",
+  resultados: "Resultados",
+  titulos: "Títulos",
+  "linha-do-tempo": "Linha do tempo",
+  overview: "Visão geral",
+  regras: "Regras",
+  mapas: "Mapas",
+  biografia: "Biografia",
+  cultura: "Cultura",
+  faq: "FAQ",
+  "socio-sofredor": "Sócio Sofredor",
+  glossario: "Glossário",
+  racing: "G3X Racing",
+  "resultados-kings": "Resultados Kings",
+  "resultados-queens": "Resultados Queens",
+  "resultados-cs2": "Resultados CS2",
+  "resultados-racing": "Resultados Racing",
+  "ex-jogadores": "Ex-jogadores",
+  "ex-jogadores-kings": "Ex-Kings",
+  "ex-jogadores-cs": "Ex-CS",
+  ct: "CT do Povo",
 };
 
 /**
@@ -53,28 +54,28 @@ const LABELS: Record<string, string> = {
  * Se não estiver aqui e não for a página atual → não vira link.
  */
 const HUB_HREF: Record<string, string> = {
-  g3x: '/g3x/historia',
-  'kings-league': '/kings-league/overview',
-  cs2: '/cs2/overview',
-  gaules: '/gaules/biografia',
-  tribo: '/tribo/cultura',
-  jogadores: '/g3x/elenco', // pasta sem index → volta pro elenco
+  g3x: "/g3x/historia",
+  "kings-league": "/kings-league/overview",
+  cs2: "/cs2/overview",
+  gaules: "/gaules/biografia",
+  tribo: "/tribo/cultura",
+  jogadores: "/g3x/elenco", // pasta sem index → volta pro elenco
 };
 
-const segments = page.id.split('/').filter(Boolean);
+const segments = page.id.split("/").filter(Boolean);
 
 const breadcrumbs = [
-  { label: 'Início', href: '/' as string | null },
+  { label: "Início", href: "/" as string | null },
   ...segments.map((seg, i) => {
     const isLast = i === segments.length - 1;
-    const path = '/' + segments.slice(0, i + 1).join('/');
+    const path = "/" + segments.slice(0, i + 1).join("/");
 
     const label =
       LABELS[seg] ||
       seg
-        .split('-')
+        .split("-")
         .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-        .join(' ');
+        .join(" ");
 
     // Último item: texto atual (usa title do MD)
     if (isLast) {
@@ -94,36 +95,40 @@ const breadcrumbs = [
   <button type="button" class="back-btn" id="btn-voltar">← Voltar</button>
 
   <nav class="breadcrumbs" aria-label="Trilha de navegação">
-    {breadcrumbs.map((crumb, i) => (
-      <span class="breadcrumbs-item">
-        {i > 0 && <span class="breadcrumbs-sep">›</span>}
-        {crumb.href ? (
-          <a href={crumb.href}>{crumb.label}</a>
-        ) : (
-          <span
-            class={i === breadcrumbs.length - 1 ? 'breadcrumbs-current' : 'breadcrumbs-muted'}
-            aria-current={i === breadcrumbs.length - 1 ? 'page' : undefined}
-          >
-            {crumb.label}
-          </span>
-        )}
-      </span>
-    ))}
+    {
+      breadcrumbs.map((crumb, i) => (
+        <span class="breadcrumbs-item">
+          {i > 0 && <span class="breadcrumbs-sep">›</span>}
+          {crumb.href ? (
+            <a href={crumb.href}>{crumb.label}</a>
+          ) : (
+            <span
+              class={
+                i === breadcrumbs.length - 1
+                  ? "breadcrumbs-current"
+                  : "breadcrumbs-muted"
+              }
+              aria-current={i === breadcrumbs.length - 1 ? "page" : undefined}
+            >
+              {crumb.label}
+            </span>
+          )}
+        </span>
+      ))
+    }
   </nav>
 
   <article class="content-page" data-pagefind-body>
     <h1>{page.data.title}</h1>
-    {page.data.description && (
-      <p class="subtitle">{page.data.description}</p>
-    )}
+    {page.data.description && <p class="subtitle">{page.data.description}</p>}
     <Content />
   </article>
 </Layout>
 
 <script>
-  const btn = document.getElementById('btn-voltar');
+  const btn = document.getElementById("btn-voltar");
   if (btn) {
-    btn.addEventListener('click', () => {
+    btn.addEventListener("click", () => {
       if (window.history.length > 1 && document.referrer) {
         try {
           const ref = new URL(document.referrer);
@@ -133,10 +138,7 @@ const breadcrumbs = [
           }
         } catch {}
       }
-      window.location.href = '/';
+      window.location.href = "/";
     });
   }
 </script>
-
- 
-</Layout>

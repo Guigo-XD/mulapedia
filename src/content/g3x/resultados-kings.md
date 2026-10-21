@@ -20,6 +20,15 @@ updatedDate: 2026-10-19
 
 ## Kings Cup Brazil 2026 (em andamento)
 
+
+<div class="info-box">
+  <strong>Grupo B</strong> · Trident Arena, São Paulo<br>
+  Kelvin Oliveira fora por cirurgia no quadril · campeão mundial estreou com derrota
+</div>
+
+
+
+
 <div class="info-box">
   Temporada / fase em andamento — placares oficiais serão adicionados conforme as rodadas.
 </div>
@@ -27,14 +36,14 @@ updatedDate: 2026-10-19
 <div class="matches-grid">
 
   <div class="match-card loss">
-    <div class="match-competition">1° rodada</div>
+ <div class="match-competition">Rodada 1 · Grupo B · 19–20 out 2026</div>
     <div class="match-teams">
       <div class="match-team home">G3X FC</div>
       <div class="match-score">3<span class="x">×</span>4</div>
       <div class="match-team away">Dendele</div>
     </div>
     <div class="match-meta">
-      <span>19-Out 2026 - 21:00h</span>
+       <span>Virada no matchball · L7 (Dendele) hat-trick / 4 gols · Barata MVP apesar da derrota · gols G3X: Barata e TH</span>
          <div class="match-meta"><span class="match-badge">Derrota</span></div>
     </div>
   </div>
@@ -91,6 +100,60 @@ updatedDate: 2026-10-19
     </div>
   </div>
 </div>
+
+### Situação no Grupo B (após Rodada 1)
+
+<table class="wiki-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Time</th>
+      <th>J</th>
+      <th>V–D</th>
+      <th>SG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Dendele FC</td>
+      <td>1</td>
+      <td>1–0</td>
+      <td>+1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Capim FC</td>
+      <td>1</td>
+      <td>1–0*</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>DesimpaiN</td>
+      <td>1</td>
+      <td>0–1*</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Nyvelados FC</td>
+      <td>0</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><strong>G3X FC</strong></td>
+      <td>1</td>
+      <td>0–1</td>
+      <td>−1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="font-size:13px;color:#94a3b8;">* Capim venceu DesimpaiN nos shootouts (3–3 no tempo).</p>
+
 
 ---
 

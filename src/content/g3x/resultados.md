@@ -2,7 +2,7 @@
 title: "Resultados G3X"
 description: "Central de resultados do ecossistema G3X — Kings League, Queens League, CS2 e Racing"
 section: "G3X"
-updatedDate: 2026-10-17
+updatedDate: 2026-10-21
 ---
 
 <div class="info-box">

@@ -31,6 +31,7 @@ import {
   Car,
   UserRoundGroup,
   UsersRound,
+  PackageOpen,
 } from "@lucide/astro";
 
 const latestArticles = (await getCollection('pages'))
@@ -89,7 +90,16 @@ function sectionEmoji(section?: string) {
     <h3><Rocket size={18} class="nav-icon" />  Comece por aqui</h3>
   </div>
 
+
+
   <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+    
+      <a href="/tribo/guia-mula-novo" class="card" style="text-decoration:none;color:inherit;">
+       <div class="card-body">
+        <h4><PackageOpen size={18} class="nav-icon" /> Novo aqui ?</h4>
+        <p>Clique aqui</p>
+      </div></a>
+
     <a href="/tribo/faq" class="card" style="text-decoration:none;color:inherit;">
       <div class="card-body">
         <h4><HelpCircle size={18} class="nav-icon" /> FAQ</h4>

@@ -11,16 +11,19 @@ updatedDate: 2026-10-19
 
 <p><a href="/sobre">Sobre a MulaPédia</a> · <a href="/">Início</a></p>
 
+
 ## 2026-10
 
 <ul>
-  <li><strong>Streamers da Tribo</strong> — hub + Liminha, Lett, mch, BT</li>
+<li><strong>Guia do mula novo</strong> — caminho em 5 passos para quem chega na wiki</li>
+  <li><strong>Streamers da Tribo</strong> — hub + Liminha, Bea, mch, BT</li>
   <li><strong>CS2</strong> — overview, mapas (placeholder de radar), elenco/cabine</li>
   <li><strong>Resultados Kings</strong> — Mundiais 2024 e 2026 + Split BR 2026</li>
   <li><strong>Regras Kings</strong> — regulamento 31/08/2026 + desenho do campo</li>
   <li><strong>Ex-jogadores</strong> — hub Kings + CS (Well, Rufino, BTT, fnx…)</li>
   <li><strong>Galeria de títulos</strong> — destaque por ano</li>
-  <li>Mapas CS2: minimap em placeholder até arte final</li>
+  <li>Mapas CS2: minimap em placeholder até arte final</li>  
+  <li>Estado ativo no menu + footer completo</li>
 </ul>
 
 ## 2026-09 / base
@@ -40,5 +43,4 @@ updatedDate: 2026-10-19
   <li>Fotos / radars oficiais nos mapas CS</li>
   <li>Resultados Kings Cup Brazil 2026 rodada a rodada</li>
   <li>Mais fichas de ex-jogadores e streamers (Nak, etc.)</li>
-  <li>Estado ativo no menu + footer completo</li>
 </ul>
