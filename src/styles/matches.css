@@ -1,0 +1,128 @@
+.matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 16px 0 28px;
+}
+
+.match-card {
+  background: #1e293b;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.match-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.match-card.final {
+  border-color: var(--gold);
+  background: linear-gradient(145deg, #1e293b 0%, #1a1530 100%);
+}
+
+.match-card.win {
+  border-left: 4px solid #22c55e;
+}
+
+.match-card.loss {
+  border-left: 4px solid #ef4444;
+}
+
+.match-card.draw {
+  border-left: 4px solid #94a3b8;
+}
+
+.match-competition {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.match-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.match-team {
+  flex: 1;
+  font-weight: 700;
+  font-size: 14px;
+  color: #f1f5f9;
+  line-height: 1.3;
+}
+
+.match-team.home {
+  text-align: left;
+}
+
+.match-team.away {
+  text-align: right;
+}
+
+.match-score {
+  font-size: 22px;
+  font-weight: 800;
+  color: white;
+  background: #0f172a;
+  padding: 6px 12px;
+  border-radius: 8px;
+  min-width: 70px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.match-score .x {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 0 2px;
+}
+
+.match-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.match-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--accent);
+}
+
+.match-badge.gold {
+  background: rgba(251, 191, 36, 0.2);
+  color: var(--gold);
+}
+
+.match-badge.green {
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+
+.match-badge.red {
+  background: rgb(224, 14, 14);
+  color: #de4a4a;
+}
+
+.match-badge.gray {
+  background: rgb(128, 128, 128);
+  color: #0e0404f1;
+}

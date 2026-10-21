@@ -1,3 +1,262 @@
+.content-page {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 32px 40px;
+  border: 1px solid var(--border);
+}
+
+.content-page h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.content-page .subtitle {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.content-page h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 28px 0 12px;
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
+
+.content-page h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: #e2e8f0;
+}
+
+.content-page p,
+.content-page li {
+  font-size: 15px;
+  color: #cbd5e1;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.content-page ul {
+  padding-left: 22px;
+  margin-bottom: 16px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.back-btn:hover {
+  color: var(--accent-hover);
+}
+
+.info-box {
+  background: #1e293b;
+  border-left: 4px solid var(--accent);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.info-box strong {
+  color: var(--gold);
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  font-size: 13px;
+  margin-bottom: 14px;
+  color: var(--text-muted);
+}
+
+.breadcrumbs a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumbs a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.breadcrumbs-sep {
+  color: #475569;
+  user-select: none;
+}
+
+.breadcrumbs-current {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.breadcrumbs-muted {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.wiki-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 14px;
+  background: #0f172a;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.wiki-table th,
+.wiki-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.wiki-table th {
+  background: #1e293b;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.wiki-table tr:last-child td {
+  border-bottom: none;
+}
+
+.wiki-table tbody tr:nth-child(even) td {
+  background: rgba(30, 41, 59, 0.45);
+}
+
+.wiki-table tbody tr:hover td {
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.wiki-table a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.wiki-table a:hover {
+  text-decoration: underline;
+}
+
+.timeline {
+  position: relative;
+  margin: 24px 0 8px;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent), #1e293b);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 22px;
+  padding: 14px 16px;
+  background: #1e293b;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 18px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid #0a0f1a;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.timeline-item.gold::before {
+  background: var(--gold);
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.25);
+}
+
+.timeline-year {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.4px;
+  margin-bottom: 4px;
+}
+
+.timeline-item.gold .timeline-year {
+  color: var(--gold);
+}
+
+.timeline-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 6px;
+}
+
+.timeline-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.55;
+}
+
+.pitch-svg {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  display: block;
+  margin: 16px 0 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #0f172a;
+}
+
+.toc-list {
+  columns: 2;
+  gap: 24px;
+  margin: 12px 0 24px;
+  padding-left: 1.2em;
+  font-size: 14px;
+}
+
+.toc-list a {
+  color: var(--accent);
+}
+
+
+
 /* ========== GALERIA DE TÍTULOS ========== */
 .titles-gallery {
   display: grid;

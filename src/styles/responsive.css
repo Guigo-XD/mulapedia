@@ -1,0 +1,225 @@
+@media (max-width: 1100px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .sidebar-left,
+  .sidebar-right {
+    display: none;
+  }
+
+  .cards-grid,
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-wrap,
+  .search-box {
+    max-width: 280px;
+    margin: 0 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: auto;
+    min-height: 220px;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 20px;
+    justify-content: center;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(7, 11, 20, 0.7) 0%,
+      rgba(7, 11, 20, 0.92) 100%
+    );
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 30px;
+  }
+
+  .hero-tags {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 12px;
+    font-size: 13px;
+  }
+
+  .hero-tags span {
+    display: inline;
+  }
+
+  .hero-tags span:not(:last-child)::after {
+    content: " · ";
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+  }
+
+  .logo-text span {
+    display: none;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  .search-wrap,
+  .search-box {
+    order: 3;
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .tribo-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .nav {
+    padding: 0 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav a {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .container {
+    padding: 12px;
+  }
+
+  .cards-grid,
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-img,
+  .card-img-link,
+  .card-photo {
+    height: 140px;
+  }
+
+  .content-page {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .content-page h1 {
+    font-size: 22px;
+  }
+
+  .content-page h2 {
+    font-size: 16px;
+  }
+
+  .content-page table,
+  .wiki-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 13px;
+  }
+
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .player-card img,
+  .player-card .placeholder {
+    height: 120px;
+  }
+
+  .player-profile {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .player-profile-photo {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .player-profile-photo img,
+  .player-profile-photo .placeholder {
+    height: 220px;
+  }
+
+  .matches-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .match-score {
+    font-size: 18px;
+    min-width: 60px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .section-header h3 {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 24px 16px;
+    font-size: 12px;
+  }
+
+  .info-box {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .breadcrumbs {
+    font-size: 12px;
+  }
+
+  .toc-list {
+    columns: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+  .logo-text h1 {
+    font-size: 16px;
+  }
+}
