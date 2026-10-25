@@ -25,6 +25,7 @@ import {
   UserRoundGroup,
   BuildingComplex,
   Menu,
+  TvMinimalIcon,
 } from "@lucide/astro";
 
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
@@ -241,6 +242,12 @@ const latestRight = (await getCollection("pages"))
             >
               <Mic size={18} class="nav-icon" /> Gaules
             </a>
+              <a
+              href="/tribo/jogos-lives"
+              class:list={["nav-link", { active: isActive("/tribo/jogos-lives") }]}
+            >
+              <TvMinimalIcon size={18} class="nav-icon" /> Jogos e lives
+            </a>
             <a
               href="/tribo/cultura"
               class:list={["nav-link", { active: isActive("/tribo/cultura") }]}
@@ -455,6 +462,9 @@ const latestRight = (await getCollection("pages"))
       </div>
       <a href="/gaules/biografia"
         ><Mic size={18} class="nav-icon" /> Gaules</a
+      >
+         <a href="/tribo/jogos-lives"
+        ><TvMinimalIcon size={18} class="nav-icon" /> Jogos e lives</a
       >
       <a href="/tribo/cultura"
         ><Heart size={18} class="nav-icon" /> Cultura</a
