@@ -36,7 +36,7 @@ Clique para conhecer cada um:
 <div class="players-grid">
 
   <a href="/gaules/biografia" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">🎙️</div>
+    <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">GA</span></div>
     <div class="info">
       <div class="name">Gaules</div>
       <div class="position">Líder da Tribo</div>
@@ -45,7 +45,7 @@ Clique para conhecer cada um:
   </a>
 
   <a href="/tribo/streamer/liminha" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">🐸</div>
+   <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">LM</span></div>
     <div class="info">
       <div class="name">Liminha</div>
       <div class="position">Caster / Parceiro</div>
@@ -54,7 +54,7 @@ Clique para conhecer cada um:
   </a>
 
   <a href="/tribo/streamer/bt" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">📢</div>
+    <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">BT</span></div>
     <div class="info">
       <div class="name">BT</div>
       <div class="position">Caster / Analista</div>
@@ -63,7 +63,7 @@ Clique para conhecer cada um:
   </a>
 
   <a href="/g3x/comissao/apoka" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">🎮</div>
+    <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">AP</span></div>
     <div class="info">
       <div class="name">Apoka</div>
       <div class="position">Streamer / Auxiliar G3X</div>
@@ -72,7 +72,7 @@ Clique para conhecer cada um:
   </a>
 
   <a href="/tribo/streamer/mch" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">🚬</div>
+    <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">MCH</span></div>
     <div class="info">
       <div class="name">mch</div>
       <div class="position">Caster / Analista</div>
@@ -81,7 +81,7 @@ Clique para conhecer cada um:
   </a>
 
   <a href="/tribo/bea" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">💬</div>
+   <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">Bea</span></div>
     <div class="info">
       <div class="name">BEA</div>
       <div class="position">Streamer / Cabine</div>
@@ -89,7 +89,7 @@ Clique para conhecer cada um:
   </a>
 
   <a href="/tribo/velho-vamp" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">🧠</div>
+   <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">VVV</span></div>
     <div class="info">
       <div class="name">Velho Vamp</div>
       <div class="position">Técnico G3X FC</div>
@@ -98,7 +98,7 @@ Clique para conhecer cada um:
   </a>
 
   <a href="/tribo/k9" class="player-card" style="text-decoration:none;color:inherit;">
-    <div class="placeholder">🧠</div>
+    <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">K9</span></div>
     <div class="info">
       <div class="name">Kelvin K9</div>
       <div class="position">Jogador / Cabine</div>
@@ -114,15 +114,20 @@ Clique para conhecer cada um:
 
 ## Bordões que definem a cultura
 
-| Bordão | Significado |
-|--------|-------------|
-| **A Tribo cuida da Tribo** | Lema maior — cuidado mútuo |
-| **Nós somos o impossível** | Frase oficial de superação |
-| **Pede, Liminha** | Grito de guerra clássico |
-| **Lei de Gaules** | Time no match point que não fecha |
-| **Lei de BT** | Time que está ganhando começa a jogar mal |
-| **Sapo cego** | Expressão clássica das lives |
-| **Eles nunca vão entender** | Sobre quem não compreende a Tribo |
+<table class="wiki-table">
+  <thead>
+    <tr><th>Bordão</th><th>Significado</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>A Tribo cuida da Tribo</strong></td><td>Lema maior — cuidado mútuo</td></tr>
+    <tr><td><strong>Nós somos o impossível</strong></td><td>Frase oficial de superação</td></tr>
+    <tr><td><strong>Pede, Liminha</strong></td><td>Grito de guerra clássico</td></tr>
+    <tr><td><strong>Lei de Gaules</strong></td><td>Time no match point que não fecha</td></tr>
+    <tr><td><strong>Lei de BT</strong></td><td>Time que está ganhando começa a jogar mal</td></tr>
+    <tr><td><strong>Sapo cego</strong></td><td>Expressão clássica das lives</td></tr>
+    <tr><td><strong>Eles nunca vão entender</strong></td><td>Sobre quem não compreende a Tribo</td></tr>
+  </tbody>
+</table>
 
 → Veja o [Glossário completo](/glossario)
 
@@ -142,17 +147,42 @@ A “casa” da Tribo são as lives do Gaules: CS2, Kings League, resenha e mome
 ## Nesta seção
 
 <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
-  <a href="/tribo/faq" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>❓ FAQ</h4><p>Dúvidas frequentes.</p></div></a>
-  <a href="/glossario" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>📖 Glossário</h4><p>Bordões da Tribo.</p></div></a>
-  <a href="/tribo/socio-sofredor" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>🎫 Sócio Sofredor</h4><p>Plataforma dos sócios.</p></div></a>
-  <a href="/gaules/biografia" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>🎙️ Gaules</h4><p>Biografia completa.</p></div></a>
+
+  <a href="/tribo/faq" class="card section-nav-card" style="text-decoration:none;color:inherit;">
+    <div class="card-body">
+      <h4><span class="section-nav-label">FAQ</span> FAQ</h4>
+      <p>Dúvidas frequentes.</p>
+    </div>
+  </a>
+
+  <a href="/glossario" class="card section-nav-card" style="text-decoration:none;color:inherit;">
+    <div class="card-body">
+      <h4><span class="section-nav-label">Glos</span> Glossário</h4>
+      <p>Bordões da Tribo.</p>
+    </div>
+  </a>
+
+  <a href="/tribo/socio-sofredor" class="card section-nav-card" style="text-decoration:none;color:inherit;">
+    <div class="card-body">
+      <h4><span class="section-nav-label gold">Sócio</span> Sócio Sofredor</h4>
+      <p>Plataforma dos sócios.</p>
+    </div>
+  </a>
+
+  <a href="/gaules/biografia" class="card section-nav-card" style="text-decoration:none;color:inherit;">
+    <div class="card-body">
+      <h4><span class="section-nav-label purple">Gau</span> Gaules</h4>
+      <p>Biografia completa.</p>
+    </div>
+  </a>
+
 </div>
 
 ---
 ## Links rápidos
 
-- [🎙️ Biografia do Gaules](/gaules/biografia)
-- [📖 Glossário e bordões](/glossario)
-- [🎮 História do G3X](/g3x/historia)
-- [👥 Elenco G3X FC](/g3x/elenco)
-- [🏆 Resultados](/g3x/resultados)
+- [Biografia do Gaules](/gaules/biografia)
+- [Glossário e bordões](/glossario)
+- [História do G3X](/g3x/historia)
+- [Elenco G3X FC](/g3x/elenco)
+- [Resultados](/g3x/resultados)

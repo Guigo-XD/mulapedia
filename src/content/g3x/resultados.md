@@ -26,8 +26,8 @@ updatedDate: 2026-10-21
   </a>
 
   <a href="/g3x/resultados-queens" class="card" style="text-decoration:none;color:inherit;">
-    <div class="card-img-link" style="height:100px;background:linear-gradient(135deg,#4c1d95,#831843);display:flex;align-items:center;justify-content:center;font-size:40px;">
-      👑
+    <div class="card-img-link card-img--text" style="background:linear-gradient(135deg,#4c1d95,#831843);">
+      Queens
     </div>
     <div class="card-body">
       <h4>Queens League</h4>

@@ -18,11 +18,36 @@ Para a Tribo, entender as regras ajuda a acompanhar as lives e os jogos do **G3X
 
 ---
 
-  ## Nesta seção
+## Nesta seção
 
 <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
-  <a href="/kings-league/regras" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>📜 Regras</h4><p>Formato e mecânicas.</p></div></a>
-  <a href="/g3x/elenco" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>👥 Elenco G3X</h4><p>Kings Cup 2026.</p></div></a>
-  <a href="/g3x/resultados" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>📊 Resultados</h4><p>Placares e títulos.</p></div></a>
-  <a href="/g3x/linha-do-tempo" class="card" style="text-decoration:none;color:inherit;"><div class="card-body"><h4>⏳ Linha do tempo</h4><p>2001 → 2026.</p></div></a>
+
+  <a href="/kings-league/regras" class="card section-nav-card" style="text-decoration:none;color:inherit;">
+    <div class="card-body">
+      <h4><span class="section-nav-label">Doc</span> Regras</h4>
+      <p>Formato e mecânicas.</p>
+    </div>
+  </a>
+
+  <a href="/g3x/elenco" class="card section-nav-card" style="text-decoration:none;color:inherit;">
+    <div class="card-body">
+      <h4><span class="section-nav-label green">KL</span> Elenco G3X</h4>
+      <p>Kings Cup 2026.</p>
+    </div>
+  </a>
+
+  <a href="/g3x/resultados" class="card section-nav-card" style="text-decoration:none;color:inherit;">
+    <div class="card-body">
+      <h4><span class="section-nav-label">Res</span> Resultados</h4>
+      <p>Placares e títulos.</p>
+    </div>
+  </a>
+
+  <a href="/g3x/historia" class="card section-nav-card" style="text-decoration:none;color:inherit;">
+    <div class="card-body">
+      <h4><span class="section-nav-label gold">G3X</span> História</h4>
+      <p>2001 → 2026.</p>
+    </div>
+  </a>
+
 </div>

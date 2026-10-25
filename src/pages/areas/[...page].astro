@@ -7,6 +7,7 @@ import {
   Mic,
   Heart,
   Flag,
+  Star,
 } from '@lucide/astro';
 
 export async function getStaticPaths({ paginate }) {
@@ -101,7 +102,9 @@ const { page } = Astro.props;
   <button type="button" class="back-btn" id="btn-voltar">← Voltar</button>
 
   <article class="content-page" data-pagefind-body>
-    <h1>⭐ Todas as áreas</h1>
+    <h1 style="display:flex;align-items:center;gap:10px;">
+  <Star size={28} stroke-width={2} class="nav-icon" /> Todas as áreas
+</h1>
     <p class="subtitle">
       Página {page.currentPage} de {page.lastPage}
       · {page.total} área{page.total === 1 ? '' : 's'}

@@ -1,40 +1,28 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
 
 import {
-  Home,
   Rocket,
   MessageCircle,
   Star,
   FileText,
   ScrollText,
-  Timer,
   Users,
   Crown,
   BarChart3,
   Trophy,
-  ClipboardList,
   Crosshair,
   Map,
   Mic,
   Heart,
   HelpCircle,
-  BookOpen,
   Ticket,
-  Flag,
-  Menu,
   Gamepad2,
-  X,
-  Swords,
-  ChessQueen,
-  Car,
-  UserRoundGroup,
-  UsersRound,
   PackageOpen,
 } from "@lucide/astro";
 
-const latestArticles = (await getCollection('pages'))
+const latestArticles = (await getCollection("pages"))
   .sort((a, b) => {
     const da = a.data.updatedDate ? new Date(a.data.updatedDate).getTime() : 0;
     const db = b.data.updatedDate ? new Date(b.data.updatedDate).getTime() : 0;
@@ -42,197 +30,275 @@ const latestArticles = (await getCollection('pages'))
   })
   .slice(0, 4);
 
-function sectionEmoji(section?: string) {
-  if (section === 'G3X') return '🎮';
-  if (section === 'Kings League') return '👑';
-  if (section === 'CS2') return '🔫';
-  if (section === 'Gaules') return '🎙️';
-  if (section === 'Tribo') return '❤️';
-  return '📄';
+function sectionKey(section?: string) {
+  if (section === "G3X") return "g3x";
+  if (section === "Kings League") return "kings";
+  if (section === "CS2") return "cs2";
+  if (section === "Gaules") return "gaules";
+  if (section === "Tribo") return "tribo";
+  return "geral";
 }
-
 ---
 
 <Layout title="Início">
-<div data-pagefind-body>
+  <div data-pagefind-body>
+    <!-- Hero -->
+    <section class="hero">
+      <img class="hero-bg" src="/hero/tribo-hero.jpg" alt="" />
+      <div class="hero-overlay" aria-hidden="true"></div>
 
- <!-- Hero -->
-<section class="hero">
-  <img
-    class="hero-bg"
-    src="/hero/tribo-hero.jpg"
-    alt=""
-  />
-  <div class="hero-overlay" aria-hidden="true"></div>
-
-  <div class="hero-inner">
-    <div class="hero-content">
-      <h2>Mula<span>Pédia</span></h2>
-      <p>
-        A enciclopédia não oficial da Tribo — G3X, Kings League, CS2, Gaules
-        e a maior comunidade do Brasil.
-      </p>
-      <div class="hero-badge">👑 A Tribo cuida da Tribo</div>
-    </div>
-
-    <div class="hero-tags">
-      <span>INFORMAÇÃO</span>
-      <span>JOGO</span>
-      <span>COMUNIDADE</span>
-      <span>TRIBO 👑</span>
-    </div>
-  </div>
-</section>
-
-<!-- Comece por aqui -->
-<section>
-  <div class="section-header">
-    <h3><Rocket size={18} class="nav-icon" />  Comece por aqui</h3>
-  </div>
-
-
-
-  <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
-    
-      <a href="/tribo/guia-mula-novo" class="card" style="text-decoration:none;color:inherit;">
-       <div class="card-body">
-        <h4><PackageOpen size={18} class="nav-icon" /> Novo aqui ?</h4>
-        <p>Clique aqui</p>
-      </div></a>
-
-    <a href="/tribo/faq" class="card" style="text-decoration:none;color:inherit;">
-      <div class="card-body">
-        <h4><HelpCircle size={18} class="nav-icon" /> FAQ</h4>
-        <p>Perguntas frequentes da Tribo.</p>
-      </div>
-    </a>
-    <a href="/gaules/biografia" class="card" style="text-decoration:none;color:inherit;">
-      <div class="card-body">
-        <h4><Mic size={18} class="nav-icon" /> Gaules</h4>
-        <p>Biografia do líder da Tribo.</p>
-      </div>
-    </a>
-    <a href="/g3x/elencos" class="card" style="text-decoration:none;color:inherit;">
-      <div class="card-body">
-        <h4><Users size={18} class="nav-icon" /> Elencos</h4>
-        <p>Kings, CS2 e Queens.</p>
-      </div>
-    </a>
-    <a href="/kings-league/regras" class="card" style="text-decoration:none;color:inherit;">
-      <div class="card-body">
-        <h4><ScrollText size={18} class="nav-icon" /> Regras Kings</h4>
-        <p>Como funciona o fut7 da liga.</p>
-      </div>
-    </a>
-    <a href="/tribo/cultura" class="card" style="text-decoration:none;color:inherit;">
-      <div class="card-body">
-        <h4><Heart size={18} class="nav-icon" /> Cultura</h4>
-        <p>Valores, streamers e bordões.</p>
-      </div>
-    </a>
-  </div>
-</section>
-<!-- Principais áreas -->
-<section>  
-  <div class="section-header">
-    <h3><Star size={18} class="nav-icon" />Principais áreas</h3>
-    <a href="/areas">Ver todas as áreas →</a>
-  </div>
-
-  <div class="cards-grid">
-
-  <div class="card">
-    <a href="/g3x/historia" class="card-img-link">
-      <img src="/cards/g3x.jpg" alt="G3X" class="card-photo" />    
-    </a>
-    <div class="card-body">
-      <a href="/g3x/historia"><h4>G3X</h4></a>
-      <p>Fundado em 2001 por Gaules no CS 1.6. Hoje é o time do povo na Kings League e campeão mundial 2026.</p>
-      <div class="card-links">
-        <a href="/g3x/historia"><ScrollText size={18} class="nav-icon" /> História →</a>
-        <a href="/g3x/titulos"><Trophy size={18} class="nav-icon" /> Títulos →</a>
-        <a href="/g3x/elencos"><Users size={18} class="nav-icon" /> Elencos →</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <a href="/kings-league/overview" class="card-img-link">
-      <img src="/cards/kl.jpg" alt="Kings League" class="card-photo" />
-    </a>
-    <div class="card-body">
-      <a href="/kings-league/overview"><h4>Kings League</h4></a>
-      <p>Futebol 7 + entretenimento. G3X FC foi campeão da Kings World Cup Clubs 2026 em Milão (9×5 Alpak).</p>
-      <div class="card-links">
-        <a href="/kings-league/overview"><ScrollText size={18} class="nav-icon" /> Visão geral →</a>
-        <a href="/g3x/resultados"><BarChart3 size={18} class="nav-icon" /> Resultados →</a>
-        <a href="/g3x/elenco"><Users size={18} class="nav-icon" /> Elenco G3X →</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <a href="/cs2/overview" class="card-img-link">
-      <img src="/cards/cs2.jpg" alt="Counter-Strike 2" class="card-photo" />
-    </a>
-    <div class="card-body">
-      <a href="/cs2/overview"><h4>Counter-Strike 2</h4></a>
-      <p>O FPS que move a Tribo. Gaules transmite diariamente e já montou dream team com FalleN, KSCERATO e mais.</p>
-      <div class="card-links">
-        <a href="/cs2/overview"><ScrollText size={18} class="nav-icon" /> Visão geral →</a>
-        <a href="/cs2/mapas"><Map size={18} class="nav-icon" /> Mapas →</a>
-        <a href="/gaules/biografia"><Mic size={18} class="nav-icon" /> Gaules →</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <a href="/tribo/cultura" class="card-img-link">
-      <img src="/cards/tribo.jpg" alt="Universo da Tribo" class="card-photo" />
-    </a>
-    <div class="card-body">
-      <a href="/tribo/cultura"><h4>Universo da Tribo</h4></a>
-      <p>Gaules, Liminha, BT, Apoka, BIA, Velho Vamp e milhões de mulas. Cultura, memes e “A Tribo cuida da Tribo”.</p>
-      <div class="card-links">
-        <a href="/gaules/biografia"><Mic size={18} class="nav-icon" /> Gaules →</a>
-        <a href="/glossario"><MessageCircle size={18} class="nav-icon" /> Bordões →</a>
-        <a href="/tribo/cultura"><Heart size={18} class="nav-icon" /> Cultura →</a>
-        <a href="/tribo/socio-sofredor"><Ticket size={18} class="nav-icon" /> Sócio Sofredor →</a>
-      </div>
-    </div>
-  </div>
-
-</div>
-</section>
-
-  <!-- Últimos artigos -->
-  <section>
-  <div class="section-header">
-    <h3><FileText size={18} class="nav-icon" /> Últimos artigos</h3>
-    <a href="/artigos">Ver todos os artigos →</a>
-  </div>
-
-  <div class="articles-grid">
-    {latestArticles.map((article) => (
-      <a href={`/${article.id}`} class="article-card">
-        <div
-          class="article-img"
-          style="background:linear-gradient(135deg,#1e293b,#0f172a);"
-        >
-          {sectionEmoji(article.data.section)}
-        </div>
-        <div class="article-body">
-          <h5>{article.data.title}</h5>
-          <p>{article.data.description || 'Artigo da MulaPédia'}</p>
-          <div class="article-date">
-            {article.data.section || 'Geral'}
-            {article.data.updatedDate &&
-              ` · ${new Date(article.data.updatedDate).toLocaleDateString('pt-BR')}`}
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h2>Mula<span>Pédia</span></h2>
+          <p>
+            A enciclopédia não oficial da Tribo — G3X, Kings League, CS2, Gaules
+            e a maior comunidade do Brasil.
+          </p>
+          <div class="hero-badge">
+            <Crown size={14} class="nav-icon" /> A Tribo cuida da Tribo
           </div>
         </div>
-      </a>
-    ))}
+
+        <div class="hero-tags">
+          <span>INFORMAÇÃO</span>
+          <span>JOGO</span>
+          <span>COMUNIDADE</span>
+          <span>TRIBO</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comece por aqui -->
+    <section>
+      <div class="section-header">
+        <h3><Rocket size={18} class="nav-icon" /> Comece por aqui</h3>
+      </div>
+
+      <div
+        class="cards-grid"
+        style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));"
+      >
+        <a
+          href="/tribo/guia-mula-novo"
+          class="card"
+          style="text-decoration:none;color:inherit;"
+        >
+          <div class="card-body">
+            <h4>
+              <PackageOpen size={18} class="nav-icon" /> Novo aqui?
+            </h4>
+            <p>Guia rápido para a wiki.</p>
+          </div>
+        </a>
+
+        <a
+          href="/tribo/faq"
+          class="card"
+          style="text-decoration:none;color:inherit;"
+        >
+          <div class="card-body">
+            <h4><HelpCircle size={18} class="nav-icon" /> FAQ</h4>
+            <p>Perguntas frequentes da Tribo.</p>
+          </div>
+        </a>
+
+        <a
+          href="/gaules/biografia"
+          class="card"
+          style="text-decoration:none;color:inherit;"
+        >
+          <div class="card-body">
+            <h4><Mic size={18} class="nav-icon" /> Gaules</h4>
+            <p>Biografia do líder da Tribo.</p>
+          </div>
+        </a>
+
+        <a
+          href="/g3x/elencos"
+          class="card"
+          style="text-decoration:none;color:inherit;"
+        >
+          <div class="card-body">
+            <h4><Users size={18} class="nav-icon" /> Elencos</h4>
+            <p>Kings, CS2 e Queens.</p>
+          </div>
+        </a>
+
+        <a
+          href="/kings-league/regras"
+          class="card"
+          style="text-decoration:none;color:inherit;"
+        >
+          <div class="card-body">
+            <h4><ScrollText size={18} class="nav-icon" /> Regras Kings</h4>
+            <p>Como funciona o fut7 da liga.</p>
+          </div>
+        </a>
+
+        <a
+          href="/tribo/cultura"
+          class="card"
+          style="text-decoration:none;color:inherit;"
+        >
+          <div class="card-body">
+            <h4><Heart size={18} class="nav-icon" /> Cultura</h4>
+            <p>Valores, streamers e bordões.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Principais áreas -->
+    <section>
+      <div class="section-header">
+        <h3><Star size={18} class="nav-icon" /> Principais áreas</h3>
+        <a href="/areas">Ver todas as áreas →</a>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <a href="/g3x/historia" class="card-img-link">
+            <img src="/cards/g3x.jpg" alt="G3X" class="card-photo" />
+          </a>
+          <div class="card-body">
+            <a href="/g3x/historia"><h4>G3X</h4></a>
+            <p>
+              Fundado em 2001 por Gaules no CS 1.6. Hoje é o time do povo na
+              Kings League e campeão mundial 2026.
+            </p>
+            <div class="card-links">
+              <a href="/g3x/historia"
+                ><ScrollText size={18} class="nav-icon" /> História →</a
+              >
+              <a href="/g3x/titulos"
+                ><Trophy size={18} class="nav-icon" /> Títulos →</a
+              >
+              <a href="/g3x/elencos"
+                ><Users size={18} class="nav-icon" /> Elencos →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="/kings-league/overview" class="card-img-link">
+            <img src="/cards/kl.jpg" alt="Kings League" class="card-photo" />
+          </a>
+          <div class="card-body">
+            <a href="/kings-league/overview"><h4>Kings League</h4></a>
+            <p>
+              Futebol 7 + entretenimento. G3X FC foi campeão da Kings World Cup
+              Clubs 2026 em Milão (9×5 Alpak).
+            </p>
+            <div class="card-links">
+              <a href="/kings-league/overview"
+                ><ScrollText size={18} class="nav-icon" /> Visão geral →</a
+              >
+              <a href="/g3x/resultados"
+                ><BarChart3 size={18} class="nav-icon" /> Resultados →</a
+              >
+              <a href="/g3x/elenco"
+                ><Users size={18} class="nav-icon" /> Elenco G3X →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="/cs2/overview" class="card-img-link">
+            <img
+              src="/cards/cs2.jpg"
+              alt="Counter-Strike 2"
+              class="card-photo"
+            />
+          </a>
+          <div class="card-body">
+            <a href="/cs2/overview"><h4>Counter-Strike 2</h4></a>
+            <p>
+              O FPS que move a Tribo. Gaules transmite diariamente e já montou
+              dream team com FalleN, KSCERATO e mais.
+            </p>
+            <div class="card-links">
+              <a href="/cs2/overview"
+                ><ScrollText size={18} class="nav-icon" /> Visão geral →</a
+              >
+              <a href="/cs2/mapas"><Map size={18} class="nav-icon" /> Mapas →</a
+              >
+              <a href="/gaules/biografia"
+                ><Mic size={18} class="nav-icon" /> Gaules →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="/tribo/cultura" class="card-img-link">
+            <img
+              src="/cards/tribo.jpg"
+              alt="Universo da Tribo"
+              class="card-photo"
+            />
+          </a>
+          <div class="card-body">
+            <a href="/tribo/cultura"><h4>Universo da Tribo</h4></a>
+            <p>
+              Gaules, Liminha, BT, Apoka, BIA, Velho Vamp e milhões de mulas.
+              Cultura, memes e “A Tribo cuida da Tribo”.
+            </p>
+            <div class="card-links">
+              <a href="/gaules/biografia"
+                ><Mic size={18} class="nav-icon" /> Gaules →</a
+              >
+              <a href="/glossario"
+                ><MessageCircle size={18} class="nav-icon" /> Bordões →</a
+              >
+              <a href="/tribo/cultura"
+                ><Heart size={18} class="nav-icon" /> Cultura →</a
+              >
+              <a href="/tribo/socio-sofredor"
+                ><Ticket size={18} class="nav-icon" /> Sócio Sofredor →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Últimos artigos -->
+    <section>
+      <div class="section-header">
+        <h3><FileText size={18} class="nav-icon" /> Últimos artigos</h3>
+        <a href="/artigos">Ver todos os artigos →</a>
+      </div>
+
+      <div class="articles-grid">
+        {
+          latestArticles.map((article) => {
+            const key = sectionKey(article.data.section);
+            return (
+              <a href={`/${article.id}`} class="article-card">
+                <div class:list={["article-img", `article-img--${key}`]}>
+                  {key === "g3x" && <Gamepad2 size={28} stroke-width={2} />}
+                  {key === "kings" && <Crown size={28} stroke-width={2} />}
+                  {key === "cs2" && <Crosshair size={28} stroke-width={2} />}
+                  {key === "gaules" && <Mic size={28} stroke-width={2} />}
+                  {key === "tribo" && <Heart size={28} stroke-width={2} />}
+                  {key === "geral" && <FileText size={28} stroke-width={2} />}
+                </div>
+                <div class="article-body">
+                  <h5>{article.data.title}</h5>
+                  <p>{article.data.description || "Artigo da MulaPédia"}</p>
+                  <div class="article-date">
+                    {article.data.section || "Geral"}
+                    {article.data.updatedDate &&
+                      ` · ${new Date(article.data.updatedDate).toLocaleDateString("pt-BR")}`}
+                  </div>
+                </div>
+              </a>
+            );
+          })
+        }
+      </div>
+    </section>
   </div>
-</section>
-</div>
 </Layout>

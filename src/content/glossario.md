@@ -1,6 +1,8 @@
 ---
 title: "Glossário & Bordões da Tribo"
 description: "O dicionário oficial das mulas"
+section: "Tribo"
+updatedDate: 2026-10-24
 ---
 
 ## Bordões Principais
@@ -14,9 +16,9 @@ description: "O dicionário oficial das mulas"
 - **Eles nunca vão entender** — sobre quem não compreende a Tribo
 
 ## Termos
+
 - **Mula** — membro da Tribo
 - **Tribonera** — a live / a casa
-
 
 ---
 
@@ -27,19 +29,19 @@ Muitos bordões nascem da live, do G3X e da cabine. Para o panorama completo:
 <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
   <a href="/tribo/faq" class="card" style="text-decoration:none;color:inherit;">
     <div class="card-body">
-      <h4>❓ FAQ da Tribo</h4>
+      <h4>FAQ da Tribo</h4>
       <p>Perguntas e respostas rápidas.</p>
     </div>
   </a>
   <a href="/tribo/cultura" class="card" style="text-decoration:none;color:inherit;">
     <div class="card-body">
-      <h4>❤️ Cultura</h4>
+      <h4>Cultura</h4>
       <p>Valores e figuras da casa.</p>
     </div>
   </a>
   <a href="/gaules/biografia" class="card" style="text-decoration:none;color:inherit;">
     <div class="card-body">
-      <h4>🎙️ Gaules</h4>
+      <h4>Gaules</h4>
       <p>Origem de muita da cultura.</p>
     </div>
   </a>

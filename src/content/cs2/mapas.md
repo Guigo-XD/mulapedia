@@ -36,7 +36,7 @@ updatedDate: 2026-10-19
   </div>
   <div class="map-layout">
   <div class="map-placeholder" aria-label="Minimap em breve">
-  <span class="map-placeholder-icon" aria-hidden="true">🗺️</span>
+ <span class="map-placeholder-icon" aria-hidden="true">MAP</span>
   <span class="map-placeholder-name">Mirage</span>
   <span class="map-placeholder-hint">Radar em breve</span>
 </div>
@@ -65,7 +65,7 @@ updatedDate: 2026-10-19
   </div>
   <div class="map-layout">
    <div class="map-placeholder" aria-label="Minimap em breve">
-  <span class="map-placeholder-icon" aria-hidden="true">🗺️</span>
+  <span class="map-placeholder-icon" aria-hidden="true">MAP</span>
   <span class="map-placeholder-name">Inferno</span>
   <span class="map-placeholder-hint">Radar em breve</span>
 </div>
@@ -94,7 +94,7 @@ updatedDate: 2026-10-19
   </div>
   <div class="map-layout">
     <div class="map-placeholder" aria-label="Minimap em breve">
-  <span class="map-placeholder-icon" aria-hidden="true">🗺️</span>
+<span class="map-placeholder-icon" aria-hidden="true">MAP</span>
   <span class="map-placeholder-name">Dust II</span>
   <span class="map-placeholder-hint">Radar em breve</span>
 </div>
@@ -123,7 +123,7 @@ updatedDate: 2026-10-19
   </div>
   <div class="map-layout">
     <div class="map-placeholder" aria-label="Minimap em breve">
-  <span class="map-placeholder-icon" aria-hidden="true">🗺️</span>
+  <span class="map-placeholder-icon" aria-hidden="true">MAP</span>
   <span class="map-placeholder-name">Nuke</span>
   <span class="map-placeholder-hint">Radar em breve</span>
 </div>
@@ -152,7 +152,7 @@ updatedDate: 2026-10-19
   </div>
   <div class="map-layout">
     <div class="map-placeholder" aria-label="Minimap em breve">
-  <span class="map-placeholder-icon" aria-hidden="true">🗺️</span>
+  <span class="map-placeholder-icon" aria-hidden="true">MAP</span>
   <span class="map-placeholder-name">Ancient</span>
   <span class="map-placeholder-hint">Radar em breve</span>
 </div>
@@ -181,7 +181,7 @@ updatedDate: 2026-10-19
   </div>
   <div class="map-layout">
   <div class="map-placeholder" aria-label="Minimap em breve">
-  <span class="map-placeholder-icon" aria-hidden="true">🗺️</span>
+ <span class="map-placeholder-icon" aria-hidden="true">MAP</span>
   <span class="map-placeholder-name">Anubis</span>
   <span class="map-placeholder-hint">Radar em breve</span>
 </div>

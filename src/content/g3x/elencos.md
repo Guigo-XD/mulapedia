@@ -2,7 +2,7 @@
 title: "Elencos G3X"
 description: "Elencos do G3X separados por modalidade — Kings League, CS2 e Queens League"
 section: "G3X"
-updatedDate: 2026-10-15
+updatedDate: 2026-10-24
 ---
 
 <div class="info-box">
@@ -14,10 +14,9 @@ updatedDate: 2026-10-15
 
 <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
 
-  <!-- Kings League -->
   <a href="/g3x/elenco" class="card" style="text-decoration:none;color:inherit;">
-    <div class="card-img-link" style="height:100px;background:linear-gradient(135deg,#14532d,#1e3a8a);display:flex;align-items:center;justify-content:center;font-size:40px;">
-      👑
+    <div class="card-img-link card-img--text" style="background:linear-gradient(135deg,#14532d,#1e3a8a);">
+      Kings
     </div>
     <div class="card-body">
       <h4>Kings League</h4>
@@ -28,10 +27,9 @@ updatedDate: 2026-10-15
     </div>
   </a>
 
-  <!-- CS2 -->
   <a href="/g3x/elenco-cs2" class="card" style="text-decoration:none;color:inherit;">
-    <div class="card-img-link" style="height:100px;background:linear-gradient(135deg,#1e3a8a,#0f172a);display:flex;align-items:center;justify-content:center;font-size:40px;">
-      🔫
+    <div class="card-img-link card-img--text" style="background:linear-gradient(135deg,#1e3a8a,#0f172a);">
+      CS2
     </div>
     <div class="card-body">
       <h4>Counter-Strike 2 (Não oficial)</h4>
@@ -42,10 +40,9 @@ updatedDate: 2026-10-15
     </div>
   </a>
 
-  <!-- Queens League -->
   <a href="/g3x/elenco-queens" class="card" style="text-decoration:none;color:inherit;">
-    <div class="card-img-link" style="height:100px;background:linear-gradient(135deg,#4c1d95,#831843);display:flex;align-items:center;justify-content:center;font-size:40px;">
-      👑
+    <div class="card-img-link card-img--text" style="background:linear-gradient(135deg,#4c1d95,#831843);">
+      Queens
     </div>
     <div class="card-body">
       <h4>Queens League (Não Oficial)</h4>
@@ -56,26 +53,23 @@ updatedDate: 2026-10-15
     </div>
   </a>
 
-
-
   <a href="/g3x/racing" class="card" style="text-decoration:none;color:inherit;">
-   <div class="card-img-link" style="height:100px;background:linear-gradient(135deg,#4c1d95,#831843);display:flex;align-items:center;justify-content:center;font-size:40px;">
-      🏎️
+    <div class="card-img-link card-img--text" style="background:linear-gradient(135deg,#7f1d1d,#1e1b4b);">
+      Racing
     </div>
-  <div class="card-body">
-    <h4> G3X Racing</h4>
-    <p>Automobilismo · Turismo Nacional</p>
-  </div>
-</a>
+    <div class="card-body">
+      <h4>G3X Racing</h4>
+      <p>Automobilismo · Turismo Nacional</p>
+    </div>
+  </a>
 
 </div>
-
 
 ---
 
 ## Links relacionados
 
-  <a href="/g3x/ex-jogadores" class="card">... História de elenco</a>
+- [Ex-jogadores](/g3x/ex-jogadores)
 - [História do G3X](/g3x/historia)
 - [Resultados](/g3x/resultados)
 - [Kings League](/kings-league/overview)

@@ -135,11 +135,11 @@ updatedDate: 2026-10-15
 
 ## Na MulaPédia
 
-- [🎮 História do G3X](/g3x/historia)
-- [👥 Elenco Kings League](/g3x/elenco)
-- [📋 Todos os elencos](/g3x/elencos)
-- [🏆 Resultados](/g3x/resultados)
-- [❤️ Cultura da Tribo](/tribo/cultura)
-- [🎫 Sócio Sofredor](/tribo/socio-sofredor)
-- [📖 Glossário](/glossario)
-- [🔫 Counter-Strike 2](/cs2/overview)
+- [História do G3X](/g3x/historia)
+- [Elenco Kings League](/g3x/elenco)
+- [Todos os elencos](/g3x/elencos)
+- [Resultados](/g3x/resultados)
+- [Cultura da Tribo](/tribo/cultura)
+- [Sócio Sofredor](/tribo/socio-sofredor)
+- [Glossário](/glossario)
+- [Counter-Strike 2](/cs2/overview)

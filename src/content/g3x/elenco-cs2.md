@@ -2,7 +2,7 @@
 title: "Elenco CS2 — G3X / Gaules"
 description: "Line-up e Dream Team ligados ao G3X e às transmissões de Counter-Strike 2"
 section: "G3X"
-updatedDate: 2026-10-15
+updatedDate: 2026-10-24
 ---
 
 <div class="info-box">
@@ -24,7 +24,7 @@ Line-up de destaque anunciada/montada no universo da Tribo em 2026:
 <div class="players-grid">
 
   <div class="player-card">
-    <div class="placeholder">🎯</div>
+    <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">FN</span></div>
     <div class="info">
       <div class="name">FalleN</div>
       <div class="position">AWPer / IGL</div>
@@ -33,7 +33,7 @@ Line-up de destaque anunciada/montada no universo da Tribo em 2026:
   </div>
 
   <div class="player-card">
-    <div class="placeholder">🔥</div>
+    <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">KS</span></div>
     <div class="info">
       <div class="name">KSCERATO</div>
       <div class="position">Rifler</div>
@@ -42,7 +42,7 @@ Line-up de destaque anunciada/montada no universo da Tribo em 2026:
   </div>
 
   <div class="player-card">
-    <div class="placeholder">⚡</div>
+    <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">IN</span></div>
     <div class="info">
       <div class="name">insani</div>
       <div class="position">Rifler</div>
@@ -50,7 +50,7 @@ Line-up de destaque anunciada/montada no universo da Tribo em 2026:
   </div>
 
   <div class="player-card">
-    <div class="placeholder">🔫</div>
+    <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">NQ</span></div>
     <div class="info">
       <div class="name">nqz</div>
       <div class="position">AWPer / Rifler</div>
@@ -58,7 +58,7 @@ Line-up de destaque anunciada/montada no universo da Tribo em 2026:
   </div>
 
   <div class="player-card">
-    <div class="placeholder">🎮</div>
+    <div class="placeholder" aria-hidden="true"><span class="placeholder-initials">N1</span></div>
     <div class="info">
       <div class="name">n1ssim</div>
       <div class="position">Rifler</div>
@@ -66,7 +66,6 @@ Line-up de destaque anunciada/montada no universo da Tribo em 2026:
   </div>
 
 </div>
-
 
 ---
 

@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Home, FileText, Star, Users } from '@lucide/astro';
 ---
 
 <Layout
@@ -8,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
   showSidebars={false}
 >
   <article class="content-page page-404">
-    <div style="font-size:64px;margin-bottom:12px;">🫏</div>
+    <div style="font-size:64px;margin-bottom:12px;" aria-hidden="true">🫏</div>
     <h1 style="font-size:2rem;margin-bottom:8px;">404 — Não encontrado</h1>
     <p style="color:var(--text-muted);max-width:420px;margin:0 auto 24px;">
       Essa página não existe na MulaPédia… ou foi pro respawn.
@@ -16,12 +17,22 @@ import Layout from '../layouts/Layout.astro';
     </p>
 
     <div class="actions">
-      <a href="/" class="page-btn" style="color:#fff;background:var(--accent);border-color:var(--accent);">
-        🏠 Início
+      <a
+        href="/"
+        class="page-btn"
+        style="color:#fff;background:var(--accent);border-color:var(--accent);display:inline-flex;align-items:center;gap:8px;"
+      >
+        <Home size={16} /> Início
       </a>
-      <a href="/artigos" class="page-btn">📄 Artigos</a>
-      <a href="/areas" class="page-btn">⭐ Áreas</a>
-      <a href="/g3x/elencos" class="page-btn">👥 Elencos</a>
+      <a href="/artigos" class="page-btn" style="display:inline-flex;align-items:center;gap:8px;">
+        <FileText size={16} /> Artigos
+      </a>
+      <a href="/areas" class="page-btn" style="display:inline-flex;align-items:center;gap:8px;">
+        <Star size={16} /> Áreas
+      </a>
+      <a href="/g3x/elencos" class="page-btn" style="display:inline-flex;align-items:center;gap:8px;">
+        <Users size={16} /> Elencos
+      </a>
     </div>
   </article>
 </Layout>
