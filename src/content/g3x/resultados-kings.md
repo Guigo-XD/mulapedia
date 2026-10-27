@@ -101,7 +101,7 @@ updatedDate: 2026-10-19
   </div>
 </div>
 
-### Situação no Grupo B (após Rodada 1)
+### Situação no Grupo B (após Rodada 2)
 
 <table class="wiki-table">
   <thead>
