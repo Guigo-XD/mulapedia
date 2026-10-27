@@ -36,7 +36,7 @@ updatedDate: 2026-10-19
 <div class="matches-grid">
 
   <div class="match-card loss">
- <div class="match-competition">Rodada 1 · Grupo B · 19–20 out 2026</div>
+ <div class="match-competition">Rodada 1 · Grupo B · 19 out 2026</div>
     <div class="match-teams">
       <div class="match-team home">G3X FC</div>
       <div class="match-score">3<span class="x">×</span>4</div>
@@ -48,16 +48,16 @@ updatedDate: 2026-10-19
     </div>
   </div>
 
-  <div class="match-card">
-    <div class="match-competition">Próximos jogos</div>
+   <div class="match-card win">
+    <div class="match-competition">Rodada 1 · Grupo B · 26 out 2026</div>
     <div class="match-teams">
       <div class="match-team home">Nyvelados</div>
-      <div class="match-score">— <span class="x">×</span> —</div>
+      <div class="match-score">2<span class="x">×</span>9</div>
       <div class="match-team away">G3X</div>
     </div>
-    <div class="match-meta">
-      <span>26-Out 2026 18:00h</span>
-     <span class="match-badge gray">-</span>
+  <div class="match-meta">
+       <span>Ivo (Nyvelados)  2 gols · Aleix Martí MVP · gols G3X:Barata 1'Aleix 2', 41' TH 4', 21', 23' Danilo 17' Andreas 22'</span>
+        <span class="match-badge green">Vitória</span>
     </div>
   </div>
   
@@ -114,19 +114,26 @@ updatedDate: 2026-10-19
     </tr>
   </thead>
   <tbody>
+   <tr>
+      <td>2</td>
+      <td>Capim FC</td>
+      <td>1</td>
+      <td>2–0*</td>
+      <td>2</td>
+    </tr>
     <tr>
       <td>1</td>
       <td>Dendele FC</td>
       <td>1</td>
-      <td>1–0</td>
-      <td>+1</td>
+      <td>1–1</td>
+      <td>-1</td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>Capim FC</td>
+      <td>5</td>
+      <td><strong>G3X FC</strong></td>
       <td>1</td>
-      <td>1–0*</td>
-      <td>0</td>
+      <td>1–1</td>
+      <td>6</td>
     </tr>
     <tr>
       <td>3</td>
@@ -139,16 +146,9 @@ updatedDate: 2026-10-19
       <td>4</td>
       <td>Nyvelados FC</td>
       <td>0</td>
-      <td>—</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td><strong>G3X FC</strong></td>
-      <td>1</td>
-      <td>0–1</td>
-      <td>−1</td>
-    </tr>
+      <td>0-1</td>
+      <td>-7</td>
+    </tr>    
   </tbody>
 </table>
 
