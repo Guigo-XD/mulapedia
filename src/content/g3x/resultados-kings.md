@@ -49,7 +49,7 @@ updatedDate: 2026-10-19
   </div>
 
    <div class="match-card win">
-    <div class="match-competition">Rodada 1 · Grupo B · 26 out 2026</div>
+    <div class="match-competition">Rodada 2 · Grupo B · 26 out 2026</div>
     <div class="match-teams">
       <div class="match-team home">Nyvelados</div>
       <div class="match-score">2<span class="x">×</span>9</div>
