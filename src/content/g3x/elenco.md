@@ -2,7 +2,7 @@
 title: "Elenco G3X FC"
 description: "Elenco completo da Kings Cup Brazil 2026"
 section: "G3X"
-updatedDate: 2026-10-16
+updatedDate: 2026-11-01
 ---
 
 <div class="info-box">
@@ -10,6 +10,7 @@ updatedDate: 2026-10-16
   <strong>Técnico:</strong> Velho Vamp<br>
   <strong>Auxiliar:</strong> Ale Apoka<br>
   <strong>Kelvin:</strong> Afastado por cirurgia no quadril — não joga a Kings Cup
+  <strong>13º jogador:</strong> João Pedro (“Pajé”) — reforço para a Kings Cup 2026
 </div>
 
 ## Comissão Técnica
@@ -206,3 +207,31 @@ updatedDate: 2026-10-16
    </a>
 
 </div>
+
+## 13º jogador
+
+<div class="info-box">
+  Na Kings League, o clube pode usar a opção de um
+  <strong>13º jogador</strong> além do elenco regular.
+  O G3X anunciou <strong>João Pedro</strong> para a disputa da Kings Cup.
+</div>
+
+<div class="players-grid">
+
+ <a href="/g3x/jogadores/joao-pedro" class="player-card" style="text-decoration:none;color:inherit;">
+     <img src="/players/paje.jpg" alt="João Pedro" /> 
+    <div class="info">
+      <div class="name">João Pedro</div>
+      <div class="position">13º jogador · 24 anos</div>
+      <span class="badge gold">Pajé</span>
+      <span class="badge">Kings Cup</span>
+    </div>
+  </div>
+
+ </a>
+
+<p style="font-size:14px;color:#94a3b8;margin-top:8px;">
+  <em>“João Pedro, de 24 anos, é o mais novo reforço do atual campeão mundial
+  para a disputa da Kings Cup.”</em>
+  — anúncio oficial G3X FC
+</p>
