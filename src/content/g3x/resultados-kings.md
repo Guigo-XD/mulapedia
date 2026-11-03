@@ -61,16 +61,16 @@ updatedDate: 2026-10-19
     </div>
   </div>
   
-  <div class="match-card">
-    <div class="match-competition">Próximos jogos</div>
+   <div class="match-card loss">
+    <div class="match-competition">Jogo desafio</div>
     <div class="match-teams">
       <div class="match-team home">G3X</div>
-      <div class="match-score">— <span class="x">×</span> —</div>
+      <div class="match-score">2<span class="x">×</span>4</div>
       <div class="match-team away">Dibrados</div>
     </div>
     <div class="match-meta">
-      <span>02-Nov 2026 21:00h</span>
-       <span class="match-badge gray">-</span>
+       <span>Derrota no matchball ·Well MVP · gols G3X: Luan Teles 14' (gc) Dudu Barbosa 32'</span>
+         <div class="match-meta"><span class="match-badge">Derrota</span></div>
     </div>
   </div>
 
@@ -101,7 +101,7 @@ updatedDate: 2026-10-19
   </div>
 </div>
 
-### Situação no Grupo B (após Rodada 2)
+### Situação no Grupo B (após Rodada 3)
 
 <table class="wiki-table">
   <thead>
@@ -115,44 +115,42 @@ updatedDate: 2026-10-19
   </thead>
   <tbody>
    <tr>
-      <td>2</td>
+      <td>1</td>
       <td>Capim FC</td>
       <td>1</td>
-      <td>2–0*</td>
-      <td>2</td>
+      <td>3–0</td>
+      <td>5</td>
     </tr>
     <tr>
-      <td>1</td>
+      <td>2</td>
       <td>Dendele FC</td>
       <td>1</td>
-      <td>1–1</td>
-      <td>-1</td>
+      <td>2–1</td>
+      <td>5</td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>3</td>
       <td><strong>G3X FC</strong></td>
       <td>1</td>
       <td>1–1</td>
       <td>6</td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>DesimpaiN</td>
       <td>1</td>
-      <td>0–1*</td>
-      <td>0</td>
+      <td>0–2</td>
+      <td>-6</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>5</td>
       <td>Nyvelados FC</td>
       <td>0</td>
-      <td>0-1</td>
-      <td>-7</td>
+      <td>0-2</td>
+      <td>-10</td>
     </tr>    
   </tbody>
 </table>
-
-<p style="font-size:13px;color:#94a3b8;">* Capim venceu DesimpaiN nos shootouts (3–3 no tempo).</p>
 
 
 ---
