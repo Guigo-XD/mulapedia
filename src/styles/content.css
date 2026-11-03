@@ -559,3 +559,68 @@
   background: rgba(168, 85, 247, 0.18);
   color: #c4b5fd;
 }
+
+/* Classificação — zona de playoff (top 3) */
+.wiki-table tbody tr.playoff-zone td {
+  background: rgba(34, 197, 94, 0.12);
+  border-left: 3px solid #22c55e;
+}
+
+.wiki-table tbody tr.playoff-zone:hover td {
+  background: rgba(34, 197, 94, 0.18);
+}
+
+.wiki-table tbody tr.playoff-zone td:first-child {
+  font-weight: 800;
+  color: #4ade80;
+}
+
+/* Badge opcional na coluna de posição */
+.pos-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  background: rgba(34, 197, 94, 0.25);
+  color: #4ade80;
+}
+
+/* Fora da zona (4º e 5º) — opcional, mais discreto */
+.wiki-table tbody tr.out-zone td {
+  opacity: 0.85;
+}
+
+.wiki-table tbody tr.out-zone td:first-child {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+/* Legenda sob a tabela */
+.table-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.table-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-legend-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: rgba(34, 197, 94, 0.35);
+  border-left: 3px solid #22c55e;
+  box-sizing: border-box;
+}

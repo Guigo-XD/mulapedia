@@ -101,59 +101,94 @@ updatedDate: 2026-10-19
   </div>
 </div>
 
-### Situação no Grupo B (após Rodada 3)
+## Situação no Grupo B
+
+<p style="font-size:14px;color:#94a3b8;margin-bottom:12px;">
+  Os <strong style="color:#4ade80;">3 primeiros</strong> classificam para os playoffs.
+</p>
 
 <table class="wiki-table">
   <thead>
     <tr>
-      <th>#</th>
+      <th>Pos</th>
       <th>Time</th>
       <th>J</th>
-      <th>V–D</th>
+      <th>V</th>
+      <th>D</th>
+      <th>GP</th>
+      <th>GC</th>
       <th>SG</th>
+      <th>Pts</th>
     </tr>
   </thead>
   <tbody>
-   <tr>
-      <td>1</td>
-      <td>Capim FC</td>
-      <td>1</td>
-      <td>3–0</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Dendele FC</td>
-      <td>1</td>
-      <td>2–1</td>
-      <td>5</td>
-    </tr>
-    <tr>
+    <!-- Playoff: 1º, 2º, 3º -->
+    <tr class="playoff-zone">
+      <td><span class="pos-badge">1</span></td>
+      <td><strong>Capim FC</strong></td>
       <td>3</td>
-      <td><strong>G3X FC</strong></td>
-      <td>1</td>
-      <td>1–1</td>
-      <td>6</td>
+      <td>3</td>
+      <td>0</td>
+      <td>14</td>
+      <td>9</td>
+      <td>5</td>
+      <td><strong>9</strong></td>
     </tr>
-    <tr>
+    <tr class="playoff-zone">
+      <td><span class="pos-badge">2</span></td>
+      <td><strong>Dendele FC</strong></td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>14</td>
+      <td>8</td>
+      <td>5</td>
+      <td><strong>6</strong></td>
+    </tr>
+    <tr class="playoff-zone">
+      <td><span class="pos-badge">3</span></td>
+      <td><strong>G3X FC</strong></td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>12</td>
+      <td>6</td>
+      <td>+6</td>
+      <td><strong>3</strong></td>
+    </tr>
+    <!-- Fora da zona -->
+    <tr class="out-zone">
       <td>4</td>
       <td>DesimpaiN</td>
-      <td>1</td>
-      <td>0–2</td>
-      <td>-6</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+      <td>11</td>
+      <td>-8</td>
+      <td>0</td>
     </tr>
-    <tr>
+    <tr class="out-zone">
       <td>5</td>
       <td>Nyvelados FC</td>
+      <td>2</td>
       <td>0</td>
-      <td>0-2</td>
+      <td>2</td>
+      <td>6</td>
+      <td>16</td>
       <td>-10</td>
-    </tr>    
+      <td>0</td>
+    </tr>
   </tbody>
 </table>
 
+<div class="table-legend">
+  <span class="table-legend-item">
+    <span class="table-legend-swatch" aria-hidden="true"></span>
+    Zona de classificação (top 3 → playoffs)
+  </span>
+</div>
 
----
 
 ## Resumo das campanhas mundiais
 
