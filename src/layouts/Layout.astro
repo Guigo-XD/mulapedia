@@ -26,6 +26,7 @@ import {
   BuildingComplex,
   Menu,
   TvMinimalIcon,
+  Calendar,
 } from "@lucide/astro";
 
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
@@ -161,6 +162,16 @@ const latestRight = (await getCollection("pages"))
             >
               <FileText size={18} class="nav-icon" /> Artigos
             </a>
+            <a
+              href="/g3x/calendario"
+              class:list={[
+                "sidebar-link",
+                { active: isActive("/g3x/calendario") },
+              ]}
+            >
+              <Calendar size={16} stroke-width={2} />
+              Calendário
+            </a>
 
             <div class="sidebar-title">
               <Gamepad2 size={16} stroke-width={2} />
@@ -203,10 +214,7 @@ const latestRight = (await getCollection("pages"))
             </div>
             <a
               href="/kings-league/overview"
-              class:list={[
-                "nav-link",
-                { active: isActive("/kings-league") },
-              ]}
+              class:list={["nav-link", { active: isActive("/kings-league") }]}
             >
               <Crown size={18} class="nav-icon" /> Kings League
             </a>
@@ -224,10 +232,7 @@ const latestRight = (await getCollection("pages"))
             </a>
             <a
               href="/queens-league/overview"
-              class:list={[
-                "nav-link",
-                { active: isActive("/queens-league") },
-              ]}
+              class:list={["nav-link", { active: isActive("/queens-league") }]}
             >
               <ChessQueen size={18} class="nav-icon" /> Queens League
             </a>
@@ -242,9 +247,12 @@ const latestRight = (await getCollection("pages"))
             >
               <Mic size={18} class="nav-icon" /> Gaules
             </a>
-              <a
+            <a
               href="/tribo/jogos-lives"
-              class:list={["nav-link", { active: isActive("/tribo/jogos-lives") }]}
+              class:list={[
+                "nav-link",
+                { active: isActive("/tribo/jogos-lives") },
+              ]}
             >
               <TvMinimalIcon size={18} class="nav-icon" /> Jogos e lives
             </a>
@@ -276,15 +284,11 @@ const latestRight = (await getCollection("pages"))
               <UserRoundGroup size={18} class="nav-icon" /> Sócio Sofredor
             </a>
 
-            <div
-              style="margin-top:28px;padding:16px;background:#1e293b;border-radius:12px;text-align:center;"
-            >
+            <div style="margin-top:28px;padding:16px;background:#1e293b;border-radius:12px;text-align:center;">
               <div style="font-size:22px;font-weight:800;color:#60a5fa;">
                 TRIBO
               </div>
-              <p
-                style="font-size:12px;color:#94a3b8;margin-top:8px;line-height:1.45;"
-              >
+              <p style="font-size:12px;color:#94a3b8;margin-top:8px;line-height:1.45;">
                 É mais que um time.
                 <br />
                 <strong style="color:#fbbf24">É uma família.</strong>
@@ -427,6 +431,8 @@ const latestRight = (await getCollection("pages"))
       <a href="/"><Home size={18} class="nav-icon" /> Início</a>
       <a href="/areas"><Star size={18} class="nav-icon" /> Áreas</a>
       <a href="/artigos"><FileText size={18} class="nav-icon" /> Artigos</a>
+      <a href="/g3x/calendario"><Calendar size={18} class="nav-icon" /> Calendário</a>
+
 
       <div class="sidebar-title">
         <Gamepad2 size={16} class="nav-icon" /> G3X
@@ -449,9 +455,7 @@ const latestRight = (await getCollection("pages"))
       <a href="/kings-league/overview"
         ><Crown size={18} class="nav-icon" /> Kings League</a
       >
-      <a href="/cs2/overview"
-        ><Crosshair size={18} class="nav-icon" /> CS2</a
-      >
+      <a href="/cs2/overview"><Crosshair size={18} class="nav-icon" /> CS2</a>
       <a href="/g3x/racing"><Car size={18} class="nav-icon" /> G3X Racing</a>
       <a href="/queens-league/overview"
         ><ChessQueen size={18} class="nav-icon" /> Queens League</a
@@ -460,21 +464,13 @@ const latestRight = (await getCollection("pages"))
       <div class="sidebar-title">
         <Heart size={16} class="nav-icon" /> Tribo
       </div>
-      <a href="/gaules/biografia"
-        ><Mic size={18} class="nav-icon" /> Gaules</a
-      >
-         <a href="/tribo/jogos-lives"
+      <a href="/gaules/biografia"><Mic size={18} class="nav-icon" /> Gaules</a>
+      <a href="/tribo/jogos-lives"
         ><TvMinimalIcon size={18} class="nav-icon" /> Jogos e lives</a
       >
-      <a href="/tribo/cultura"
-        ><Heart size={18} class="nav-icon" /> Cultura</a
-      >
-      <a href="/tribo/faq"
-        ><HelpCircle size={18} class="nav-icon" /> FAQ</a
-      >
-      <a href="/glossario"
-        ><BookOpen size={18} class="nav-icon" /> Glossário</a
-      >
+      <a href="/tribo/cultura"><Heart size={18} class="nav-icon" /> Cultura</a>
+      <a href="/tribo/faq"><HelpCircle size={18} class="nav-icon" /> FAQ</a>
+      <a href="/glossario"><BookOpen size={18} class="nav-icon" /> Glossário</a>
       <a href="/tribo/socio-sofredor"
         ><UserRoundGroup size={18} class="nav-icon" /> Sócio Sofredor</a
       >

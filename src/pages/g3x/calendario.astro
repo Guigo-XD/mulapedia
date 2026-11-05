@@ -1,0 +1,167 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CalendarioMes from "../../components/CalendarioMes.astro";
+
+import out from "../../data/calendario/2026-10.json";
+import nov from "../../data/calendario/2026-11.json";
+import dez from "../../data/calendario/2026-12.json";
+import jan from "../../data/calendario/2027/2027-01.json";
+
+const months = [out, nov, dez, jan];
+
+// 0=out, 1=nov, 2=dez, 3=jan — abre em novembro
+const initial = 1;
+---
+
+<Layout
+  title="Calendário"
+  description="Jogos do G3X e eventos da Tribo — Outubro a Dezembro 2026"
+>
+  <article class="content-page" data-pagefind-body>
+    <div class="info-box">
+      <strong>Atualizado:</strong> 5 nov 2026<br />
+      <strong>Visão:</strong> calendário mensal<br />
+      <strong>Jogos:</strong>
+      <a href="https://kingsleague.pro/pt/brazil" target="_blank" rel="noopener"
+        >Kings League oficial</a
+      >
+      (datas e horários podem mudar)
+    </div>
+
+    <p>
+      <a href="/g3x/resultados">Resultados</a> ·
+      <a href="/g3x/resultados-kings">Resultados Kings</a> ·
+      <a href="/g3x/elenco">Elenco</a> ·
+      <a href="/tribo/cultura">Cultura</a>
+    </p>
+
+    <div class="cal-legend">
+      <span><i class="lg-kings"></i> Kings / G3X</span>
+      <span><i class="lg-tribo"></i> Evento Tribo</span>
+      <span><i class="lg-live"></i> Live especial</span>
+      <span><i class="lg-done"></i> Já realizado</span>
+    </div>
+
+    <div class="cal-pager" id="cal-pager">
+      <button type="button" class="cal-pager-btn" id="cal-prev" aria-label="Mês anterior">
+        ← Anterior
+      </button>
+
+      <div class="cal-pager-dots" role="tablist" aria-label="Meses">
+        {
+          months.map((m, i) => (
+            <button
+              type="button"
+              class:list={["cal-pager-dot", { active: i === initial }]}
+              data-month={String(i)}
+            >
+              {m.label.slice(0, 3)} {m.year}
+            </button>
+          ))
+        }
+      </div>
+
+      <button type="button" class="cal-pager-btn" id="cal-next" aria-label="Próximo mês">
+        Próximo →
+      </button>
+    </div>
+
+    {
+      months.map((m, i) => (
+        <div
+          class:list={["cal-month", { active: i === initial }]}
+          data-month={String(i)}
+        >
+          <CalendarioMes
+            year={m.year}
+            month={m.month}
+            label={m.label}
+            events={m.events}
+          />
+        </div>
+      ))
+    }
+
+    <hr style="margin: 2rem 0; border-color: rgba(148,163,184,0.15);" />
+
+    <h2>Nesta seção</h2>
+    <div
+      class="cards-grid"
+      style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));"
+    >
+      <a
+        href="/g3x/resultados-kings"
+        class="card section-nav-card"
+        style="text-decoration:none;color:inherit;"
+      >
+        <div class="card-body">
+          <h4><span class="section-nav-label">Res</span> Resultados Kings</h4>
+          <p>Placares e classificação.</p>
+        </div>
+      </a>
+      <a
+        href="/g3x/elenco"
+        class="card section-nav-card"
+        style="text-decoration:none;color:inherit;"
+      >
+        <div class="card-body">
+          <h4><span class="section-nav-label green">KL</span> Elenco</h4>
+          <p>Time do povo na Kings Cup.</p>
+        </div>
+      </a>
+      <a
+        href="/kings-league/regras"
+        class="card section-nav-card"
+        style="text-decoration:none;color:inherit;"
+      >
+        <div class="card-body">
+          <h4><span class="section-nav-label">Doc</span> Regras</h4>
+          <p>Formato e mecânicas.</p>
+        </div>
+      </a>
+      <a
+        href="/tribo/cultura"
+        class="card section-nav-card"
+        style="text-decoration:none;color:inherit;"
+      >
+        <div class="card-body">
+          <h4><span class="section-nav-label purple">Tribo</span> Cultura</h4>
+          <p>Lives e a casa da Tribo.</p>
+        </div>
+      </a>
+    </div>
+  </article>
+</Layout>
+
+<script>
+  (function () {
+    const months = Array.from(document.querySelectorAll(".cal-month"));
+    const dots = Array.from(document.querySelectorAll(".cal-pager-dot"));
+    const prev = document.getElementById("cal-prev");
+    const next = document.getElementById("cal-next");
+    if (!months.length) return;
+
+    let current = months.findIndex((m) => m.classList.contains("active"));
+    if (current < 0) current = 1;
+
+    function goTo(index) {
+      if (index < 0 || index >= months.length) return;
+      current = index;
+      months.forEach((m, i) => m.classList.toggle("active", i === current));
+      dots.forEach((d, i) => d.classList.toggle("active", i === current));
+      if (prev) prev.disabled = current === 0;
+      if (next) next.disabled = current === months.length - 1;
+    }
+
+    prev?.addEventListener("click", () => goTo(current - 1));
+    next?.addEventListener("click", () => goTo(current + 1));
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        const i = Number(dot.getAttribute("data-month"));
+        if (!Number.isNaN(i)) goTo(i);
+      });
+    });
+
+    goTo(current);
+  })();
+</script>

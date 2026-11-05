@@ -1,0 +1,72 @@
+{
+  "year": 2026,
+  "month": 11,
+  "label": "Novembro",
+  "events": [
+    {
+      "day": 2,
+      "type": "kings",
+      "label": "G3X × Dibrados",
+      "href": "/g3x/resultados-kings",
+      "done": false
+    },
+    {
+      "day": 3,
+      "type": "kings",
+      "label": "Kings R3",
+      "href": "/g3x/resultados-kings",
+      "done": false
+    },
+    {
+      "day": 9,
+      "type": "kings",
+      "label": "G3X × DesimpaiN",
+      "href": "/g3x/resultados-kings",
+      "done": false
+    },
+    {
+      "day": 10,
+      "type": "kings",
+      "label": "Kings R4",
+      "href": "/g3x/resultados-kings",
+      "done": false
+    },
+       {
+      "day": 15,
+      "type": "tribo",
+      "label": "RED Bull Ladeira",
+      "href": "https://www.redbull.com/br-pt/events/red-bull-ladeira-abaixo-2026/?gad_source=1&gad_campaignid=22614775902&gbraid=0AAAAA-KSaldhtldUaDrcwrpIkOt70ecQL&gclid=Cj0KCQiA77DXBhCHARIsAHf2MNrJqInlM7iHz3Tzl8-9p1AP5rPud3GCGxqq_f_qHQbi8MySA3FoiYgaAv-fEALw_wcB",
+        "external": true,
+      "done": false
+    },
+    {
+      "day": 16,
+      "type": "kings",
+      "label": "G3X × Capim",
+      "href": "/g3x/resultados-kings",
+      "done": false
+    },
+    {
+      "day": 17,
+      "type": "kings",
+      "label": "Kings R5",
+      "href": "/g3x/resultados-kings",
+      "done": false
+    },
+    {
+      "day": 22,
+      "type": "tribo",
+      "label": "Fim votos GC",
+      "href": "https://goldencrown.kingsleague.pro",
+      "external": true,
+      "done": false
+    },
+    {
+      "day": 30,
+      "type": "tribo",
+      "label": "Finais + Gala",
+      "href": "/g3x/resultados-kings",
+      "done": false
+    }
+  ]
+}

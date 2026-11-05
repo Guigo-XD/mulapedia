@@ -1,0 +1,35 @@
+{
+  "year": 2026,
+  "month": 10,
+  "label": "Outubro",
+  "events": [
+    {
+      "day": 19,
+      "type": "kings",
+      "label": "Kings R1",
+      "href": "/g3x/resultados-kings",
+      "done": true
+    },
+    {
+      "day": 20,
+      "type": "kings",
+      "label": "DDL 4×3 G3X",
+      "href": "/g3x/resultados-kings",
+      "done": true
+    },
+    {
+      "day": 26,
+      "type": "kings",
+      "label": "G3X 9×2 NYV",
+      "href": "/g3x/resultados-kings",
+      "done": true
+    },
+    {
+      "day": 31,
+      "type": "tribo",
+      "label": "13º João Pedro",
+      "href": "/g3x/elenco",
+      "done": true
+    }
+  ]
+}

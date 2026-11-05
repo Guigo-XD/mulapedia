@@ -1,0 +1,77 @@
+---
+export interface CalEvent {
+  day: number;
+  type: "kings" | "tribo" | "live";
+  label: string;
+  href: string;
+  done?: boolean;
+  external?: boolean;
+}
+
+interface Props {
+  year: number;
+  month: number;
+  label: string;
+  events?: CalEvent[];
+}
+
+const { year, month, label, events = [] } = Astro.props;
+
+const firstDow = new Date(year, month - 1, 1).getDay();
+const daysInMonth = new Date(year, month, 0).getDate();
+const blanksEnd = (7 - ((firstDow + daysInMonth) % 7)) % 7;
+
+const byDay = new Map<number, CalEvent[]>();
+for (const e of events) {
+  const list = byDay.get(e.day) ?? [];
+  list.push(e);
+  byDay.set(e.day, list);
+}
+
+const dows = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
+---
+
+<div class="cal-wrap">
+  <div class="cal-header">
+    <h3 class="cal-title">{label} <span class="cal-year">{year}</span></h3>
+  </div>
+
+  <div class="cal-grid" role="grid" aria-label={`Calendário ${label} ${year}`}>
+    {dows.map((d) => (
+      <div class="cal-dow">{d}</div>
+    ))}
+
+    {Array.from({ length: firstDow }, (_, i) => (
+      <div class="cal-day empty" aria-hidden="true" />
+    ))}
+
+    {Array.from({ length: daysInMonth }, (_, i) => {
+      const day = i + 1;
+      const dayEvents = byDay.get(day) ?? [];
+      const has = dayEvents.length > 0;
+      return (
+        <div class:list={["cal-day", { "has-event": has }]}>
+          <span class="cal-day-num">{day}</span>
+          {has && (
+            <div class="cal-events">
+              {dayEvents.map((e) => (
+                <a
+                  class:list={["cal-event", e.type, { done: !!e.done }]}
+                  href={e.href}
+                  target={e.external ? "_blank" : undefined}
+                  rel={e.external ? "noopener" : undefined}
+                >
+                  {e.label}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      );
+    })}
+
+    {Array.from({ length: blanksEnd }, (_, i) => (
+      <div class="cal-day empty" aria-hidden="true" />
+    ))}
+  </div>
+</div>

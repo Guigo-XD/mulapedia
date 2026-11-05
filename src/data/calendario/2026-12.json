@@ -1,0 +1,28 @@
+{
+  "year": 2026,
+  "month": 12,
+  "label": "Dezembro",
+  "events": [
+    {
+      "day": 24,
+      "type": "live",
+      "label": "Véspera",
+      "href": "/tribo/cultura",
+      "done": false
+    },
+    {
+      "day": 25,
+      "type": "tribo",
+      "label": "Natal da Tribo",
+      "href": "/tribo/cultura",
+      "done": false
+    },
+    {
+      "day": 31,
+      "type": "live",
+      "label": "Réveillon",
+      "href": "/tribo/cultura",
+      "done": false
+    }
+  ]
+}
