@@ -10,6 +10,20 @@
       "href": "/tribo/cultura",
       "done": false
     },
+     {
+      "day": 2,
+      "type": "tribo",
+      "label": "Aniversário do Gaules",
+      "href": "/gaules/biografia",
+      "done": false
+    },
+      {
+      "day": 9,
+      "type": "tribo",
+      "label": "Aniversário do Apoka",
+      "href": "/g3x/comissao/apoka",
+      "done": false
+    },
     {
       "day": 25,
       "type": "tribo",
