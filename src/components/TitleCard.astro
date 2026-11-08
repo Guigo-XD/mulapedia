@@ -1,0 +1,28 @@
+---
+interface Props {
+  year: number;
+  name: string;
+  badge: string;
+  meta: string;
+  href: string;
+  featured?: boolean;
+  result?: string;
+}
+
+const { year, name, badge, meta, href, featured = false, result = "champion" } = Astro.props;
+
+const resultClass =
+  result === "champion" ? "is-champ" :
+  result === "runner-up" ? "is-silver" : "is-milestone";
+---
+
+<a
+  href={href}
+  class:list={["title-year-card", resultClass, { featured }]}
+>
+  <span class="title-year-badge">{badge}</span>
+  <div class="title-year-number">{year}</div>
+  <h3 class="title-year-name">{name}</h3>
+  <p class="title-year-meta">{meta}</p>
+  <span class="title-year-link">Ver mais →</span>
+</a>

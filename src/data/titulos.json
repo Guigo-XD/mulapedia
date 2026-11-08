@@ -1,0 +1,85 @@
+{
+  "updated": "2026-11-08",
+  "items": [
+    {
+      "id": "kwc-clubs-2026",
+      "year": 2026,
+      "name": "Kings World Cup Clubs",
+      "result": "champion",
+      "badge": "Destaque",
+      "featured": true,
+      "meta": "G3X FC campeão em Milão · campanha invicta · final 9×5 Alpak FC",
+      "href": "/g3x/resultados-kings",
+      "detail": {
+        "local": "Milão, Itália",
+        "date": "1 ago 2026",
+        "score": "G3X FC 9 × 5 Alpak FC",
+        "notes": "Invicto 5–0 · Kelvin artilheiro (14) · Andreas MVP"
+      }
+    },
+    {
+      "id": "supercopa-desimpedidos-2024",
+      "year": 2024,
+      "name": "Supercopa Desimpedidos",
+      "result": "champion",
+      "badge": "1º título Fut7",
+      "featured": true,
+      "meta": "G3X FC 3 × 2 FURIA · final no Pacaembu · gol do título de Kelvin",
+      "href": "/g3x/supercopa-desimpedidos-2024",
+      "detail": {
+        "local": "Mercado Livre Arena Pacaembu, São Paulo",
+        "date": "17 nov 2024",
+        "score": "G3X FC 3 × 2 FURIA F.C.",
+        "notes": "Primeiro troféu da organização no fut7 · Andreas e Kelvin na final · Kelvin decide"
+      }
+    },
+    {
+      "id": "mundial-clubes-2024",
+      "year": 2024,
+      "name": "Mundial de Clubes (Kings)",
+      "result": "runner-up",
+      "badge": "Vice",
+      "featured": false,
+      "meta": "G3X FC finalista · derrota para o Porcinos FC na decisão",
+      "href": "/g3x/resultados-kings",
+      "detail": {
+        "local": "México",
+        "date": "2024",
+        "score": "Vice-campeão",
+        "notes": "Campanha até a final na 1ª edição"
+      }
+    },
+    {
+      "id": "dreamhack-2007",
+      "year": 2007,
+      "name": "DreamHack Winter",
+      "result": "champion",
+      "badge": "CS",
+      "featured": true,
+      "meta": "Gaules técnico da MIBR · 1º título mundial brasileiro de Counter-Strike",
+      "href": "/gaules/biografia",
+      "detail": {
+        "local": "Suécia",
+        "date": "2007",
+        "score": "Campeão",
+        "notes": "Marco da linha G3X / Gaules no CS"
+      }
+    },
+    {
+      "id": "fundacao-2001",
+      "year": 2001,
+      "name": "Fundação g3nerationX",
+      "result": "milestone",
+      "badge": "Origem",
+      "featured": false,
+      "meta": "Nascimento da marca G3X no CS 1.6 · projeção nacional e WCG",
+      "href": "/g3x/historia",
+      "detail": {
+        "local": "Brasil",
+        "date": "2001",
+        "score": "—",
+        "notes": "Origem da organização"
+      }
+    }
+  ]
+}

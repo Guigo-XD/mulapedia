@@ -1,0 +1,63 @@
+{
+  "competition": "Supercopa Desimpedidos 2024",
+  "shortName": "SCD 2024",
+  "champion": "G3X FC",
+  "updated": "2026-11-08",
+  "venue": "Mercado Livre Arena Pacaembu, São Paulo",
+  "dates": "15–17 de novembro de 2024",
+  "organizer": "Desimpedidos / NWB",
+  "notes": "Primeiro título oficial do G3X FC no fut7. Campanha invicta até a final; Kelvin Oliveira artilheiro do torneio (6 gols).",
+  "matches": [
+    {
+      "date": "2024-11-15",
+      "phase": "Grupo B",
+      "home": "Desimpedidos EC",
+      "away": "G3X FC",
+      "scoreHome": 1,
+      "scoreAway": 4,
+      "result": "win",
+      "note": "Virada · gols: Rufino, VB, Davi, Andreas"
+    },
+    {
+      "date": "2024-11-15",
+      "phase": "Grupo B",
+      "home": "G3X FC",
+      "away": "Ronaldo TV",
+      "scoreHome": 5,
+      "scoreAway": 0,
+      "result": "win",
+      "note": "Gols: Lukeet, Kelvin (2), Davi, Well"
+    },
+    {
+      "date": "2024-11-16",
+      "phase": "Fase seguinte",
+      "home": "G3X FC",
+      "away": "Vosso Tiger",
+      "scoreHome": 4,
+      "scoreAway": 0,
+      "result": "win",
+      "note": "Classificação · Davi (2), Andreas, Rufino"
+    },
+    {
+      "date": "2024-11-17",
+      "phase": "Final",
+      "home": "G3X FC",
+      "away": "FURIA F.C.",
+      "scoreHome": 3,
+      "scoreAway": 2,
+      "result": "win",
+      "final": true,
+      "note": "Andreas e Kelvin · gol do título de Kelvin (fora da área)"
+    }
+  ],
+  "scorers": [
+    { "player": "Kelvin Oliveira", "goals": 6 },
+    { "player": "Davi", "goals": 4 },
+    { "player": "Andreas Vaz", "goals": 3 },
+    { "player": "Matheus Rufino", "goals": 3 },
+    { "player": "Lukeet", "goals": 2 },
+    { "player": "Victor Bueno (VB)", "goals": 2 },
+    { "player": "Well Andrade", "goals": 2 },
+    { "player": "Bueno", "goals": 1 }
+  ]
+}
