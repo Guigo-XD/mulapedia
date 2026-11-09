@@ -9,8 +9,10 @@ updatedDate: 2026-11-01
   <strong>Presidentes:</strong> Gaules + Kelvin Oliveira (K9)<br>
   <strong>Técnico:</strong> Velho Vamp<br>
   <strong>Auxiliar:</strong> Ale Apoka<br>
-  <strong>Kelvin:</strong> Afastado por cirurgia no quadril — não joga a Kings Cup
-  <strong>13º jogador:</strong> João Pedro (“Pajé”) — reforço para a Kings Cup 2026
+  <strong>Kelvin:</strong> Afastado por cirurgia no quadril — não joga a Kings Cup <br>
+  <strong>TH:</strong> Lesionado — não joga as ultimas rodadas Kings Cup <br>
+  <strong>DUDU:</strong> Lesionado — não joga as ultimas rodadas Kings Cup <br>
+  <strong>13º jogador:</strong> João Pedro (“Pajé”) — reforço para a Kings Cup 2026<br>
 </div>
 
 ## Comissão Técnica
@@ -159,6 +161,7 @@ updatedDate: 2026-11-01
     <div class="info">
       <div class="name">Thiago TH</div>
       <div class="position">Meia</div>
+        <span class="badge red">Lesionado</span>
          <span class="badge">Draft</span>
     </div>
 </a>
@@ -168,6 +171,7 @@ updatedDate: 2026-11-01
     <div class="info">
       <div class="name">Dudu Barbosa</div>
       <div class="position">Meia</div>
+        <span class="badge red">Lesionado</span>
          <span class="badge">Draft</span>
     </div>
   </a>
@@ -208,12 +212,41 @@ updatedDate: 2026-11-01
 
 </div>
 
+## Substitutos
+
+<div class="players-grid">
+ <a href="/g3x/jogadores/pastuch" class="player-card" style="text-decoration:none;color:inherit;">
+   <div class="placeholder" aria-hidden="true">
+      <span class="placeholder-initials">GP</span>
+    </div>
+    <div class="info">
+      <div class="name">Gabriel Pastuch</div>
+      <div class="position">Atacante</div>
+        <span class="badge">Draft</span>
+    </div>
+   </a>
+
+ <a href="/g3x/jogadores/reis" class="player-card" style="text-decoration:none;color:inherit;">
+    <div class="placeholder" aria-hidden="true">
+      <span class="placeholder-initials">RR</span>
+    </div>
+    <div class="info">
+      <div class="name">Ronaldinho Reis</div>
+      <div class="position">Atacante</div>
+        <span class="badge">Draft</span>
+    </div>
+   </a>
+</div>
+
 ## 13º jogador
 
 <div class="info-box">
   Na Kings League, o clube pode usar a opção de um
   <strong>13º jogador</strong> além do elenco regular.
-  O G3X anunciou <strong>João Pedro</strong> para a disputa da Kings Cup.
+  O G3X anunciou: <br> <strong>João Pedro</strong> para a disputa do jogo desafio.
+  <strong>João Pedro</strong> para a disputa do jogo desafio. <br>
+  <strong> Jonatas 'Batman'</strong> Para a 3° rodada da Kings Cup.<br>
+
 </div>
 
 <div class="players-grid">
@@ -224,6 +257,18 @@ updatedDate: 2026-11-01
       <div class="name">João Pedro</div>
       <div class="position">13º jogador · 24 anos</div>
       <span class="badge gold">Pajé</span>
+      <span class="badge">Kings Cup</span>
+    </div>
+ 
+
+   <a href="/g3x/ex-jogadores-kings/jonatas" class="player-card" style="text-decoration:none;color:inherit;">
+   <div class="placeholder" aria-hidden="true">
+      <span class="placeholder-initials">BAT</span>
+    </div>
+    <div class="info">
+      <div class="name">Jonatas Souza</div>
+      <div class="position">13º jogador</div>
+      <span class="badge gold">Batman</span>
       <span class="badge">Kings Cup</span>
     </div>
   </div>
