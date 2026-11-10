@@ -82,7 +82,7 @@ updatedDate: 2026-10-19
       <div class="match-team away">Desimpain</div>
     </div>
      <div class="match-meta">
-       <span>Derrota no matchball ·Well Douglinhas · gols G3X: Josildo Barata 1' Andreas Vaz 22' Gabriel Pastuch 31' Gaules 31' Gabriel Messias 38''</span>
+       <span>Derrota no matchball ·Douglinhas MVP · gols G3X: Josildo Barata 1' Andreas Vaz 22' Gabriel Pastuch 31' Gaules 31' Gabriel Messias 38''</span>
          <div class="match-meta"><span class="match-badge">Derrota</span></div>
     </div>
   </div>
