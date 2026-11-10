@@ -74,16 +74,16 @@ updatedDate: 2026-10-19
     </div>
   </div>
 
-  <div class="match-card">
-    <div class="match-competition">Próximos jogos</div>
+  <div class="match-card loss">
+    <div class="match-competition">>Rodada 3 · Grupo B · 09 nov 2026</div>
     <div class="match-teams">
       <div class="match-team home">G3X</div>
-      <div class="match-score">— <span class="x">×</span> —</div>
+      <div class="match-score">5<span class="x">×</span>7</div>
       <div class="match-team away">Desimpain</div>
     </div>
-    <div class="match-meta">
-      <span>09-Nov 2026 18:00h</span>
-      <span class="match-badge gray">-</span>
+     <div class="match-meta">
+       <span>Derrota no matchball ·Well Douglinhas · gols G3X: Josildo Barata 1' Andreas Vaz 22' Gabriel Pastuch 31' Gaules 31' Gabriel Messias 38''</span>
+         <div class="match-meta"><span class="match-badge">Derrota</span></div>
     </div>
   </div>
 
@@ -137,46 +137,46 @@ updatedDate: 2026-10-19
     <tr class="playoff-zone">
       <td><span class="pos-badge">2</span></td>
       <td><strong>Dendele FC</strong></td>
-      <td>2</td>
-      <td>2</td>
+      <td>3</td>
+      <td>3</td>
       <td>1</td>
-      <td>14</td>
-      <td>8</td>
-      <td>5</td>
-      <td><strong>6</strong></td>
-    </tr>
-    <tr class="playoff-zone">
-      <td><span class="pos-badge">3</span></td>
-      <td><strong>G3X FC</strong></td>
-      <td>2</td>
-      <td>1</td>
-      <td>1</td>
-      <td>12</td>
+      <td>22</td>
+      <td>16</td>
       <td>6</td>
-      <td>+6</td>
-      <td><strong>3</strong></td>
+      <td><strong>9</strong></td>
     </tr>
-    <!-- Fora da zona -->
-    <tr class="out-zone">
-      <td>4</td>
+       <tr class="playoff-zone">
+      <td><span class="pos-badge">3</span></td>
       <td>DesimpaiN</td>
-      <td>2</td>
-      <td>0</td>
+      <td>3</td>
+      <td>1</td>
       <td>2</td>
       <td>5</td>
       <td>11</td>
       <td>-8</td>
-      <td>0</td>
+      <td>3</td>
+    </tr>  
+    <!-- Fora da zona -->
+   <tr class="out-zone">
+      <td>4</td>
+      <td><strong>G3X FC</strong></td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>17</td>
+      <td>13</td>
+      <td>+4</td>
+      <td><strong>3</strong></td>
     </tr>
     <tr class="out-zone">
       <td>5</td>
       <td>Nyvelados FC</td>
-      <td>2</td>
+      <td>3</td>
       <td>0</td>
-      <td>2</td>
-      <td>6</td>
-      <td>16</td>
-      <td>-10</td>
+      <td>3</td>
+      <td>13</td>
+      <td>24</td>
+      <td>-11</td>
       <td>0</td>
     </tr>
   </tbody>
