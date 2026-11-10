@@ -75,7 +75,7 @@ updatedDate: 2026-10-19
   </div>
 
   <div class="match-card loss">
-    <div class="match-competition">>Rodada 3 · Grupo B · 09 nov 2026</div>
+    <div class="match-competition">Rodada 3 · Grupo B · 09 nov 2026</div>
     <div class="match-teams">
       <div class="match-team home">G3X</div>
       <div class="match-score">5<span class="x">×</span>7</div>
