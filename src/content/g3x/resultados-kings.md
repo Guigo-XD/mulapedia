@@ -30,7 +30,7 @@ updatedDate: 2026-10-19
 
 
 <div class="info-box">
-  Temporada / fase em andamento — placares oficiais serão adicionados conforme as rodadas.
+  Com 3 derrotas e apenas 1 vitória o G3X foi eliminado na fase grupos e não jogou os playoffs.
 </div>
 
 <div class="matches-grid">
@@ -87,16 +87,16 @@ updatedDate: 2026-10-19
     </div>
   </div>
 
-  <div class="match-card">
-    <div class="match-competition">Próximos jogos</div>
+  <div class="match-card loss">
+    <div class="match-competition">Rodada 4 · Grupo B · 16 nov 2026</div>
     <div class="match-teams">
       <div class="match-team home">G3X</div>
-      <div class="match-score">— <span class="x">×</span> —</div>
+      <div class="match-score">2<span class="x">×</span>5</div>
       <div class="match-team away">Capim</div>
     </div>
-    <div class="match-meta">
-      <span>16-Nov 2026 20:00h</span>
-      <span class="match-badge gray">-</span>
+   <div class="match-meta">
+       <span>Derrota no matchball ·Aleix Martí MVP · gols G3X:Aleix Martí 4' Gabriel Messias 23'</span>
+         <div class="match-meta"><span class="match-badge">Derrota</span></div>
     </div>
   </div>
 </div>
@@ -126,18 +126,18 @@ updatedDate: 2026-10-19
     <tr class="playoff-zone">
       <td><span class="pos-badge">1</span></td>
       <td><strong>Capim FC</strong></td>
-      <td>3</td>
-      <td>3</td>
+      <td>4</td>
+      <td>4</td>
       <td>0</td>
-      <td>14</td>
-      <td>9</td>
-      <td>5</td>
-      <td><strong>9</strong></td>
+      <td>19</td>
+      <td>11</td>
+      <td>8</td>
+      <td><strong>12</strong></td>
     </tr>
     <tr class="playoff-zone">
       <td><span class="pos-badge">2</span></td>
       <td><strong>Dendele FC</strong></td>
-      <td>3</td>
+      <td>4</td>
       <td>3</td>
       <td>1</td>
       <td>22</td>
@@ -148,35 +148,35 @@ updatedDate: 2026-10-19
        <tr class="playoff-zone">
       <td><span class="pos-badge">3</span></td>
       <td>DesimpaiN</td>
-      <td>3</td>
-      <td>1</td>
+      <td>4</td>
       <td>2</td>
-      <td>5</td>
-      <td>11</td>
-      <td>-8</td>
-      <td>3</td>
+      <td>2</td>
+      <td>18</td>
+      <td>20</td>
+      <td>-2</td>
+      <td>6</td>
     </tr>  
     <!-- Fora da zona -->
    <tr class="out-zone">
       <td>4</td>
       <td><strong>G3X FC</strong></td>
-      <td>3</td>
+      <td>4</td>
       <td>1</td>
-      <td>2</td>
-      <td>17</td>
-      <td>13</td>
-      <td>+4</td>
+      <td>3</td>
+      <td>19</td>
+      <td>18</td>
+      <td>1</td>
       <td><strong>3</strong></td>
     </tr>
     <tr class="out-zone">
       <td>5</td>
       <td>Nyvelados FC</td>
-      <td>3</td>
+      <td>4</td>
       <td>0</td>
-      <td>3</td>
-      <td>13</td>
-      <td>24</td>
-      <td>-11</td>
+      <td>4</td>
+      <td>7</td>
+      <td>30</td>
+      <td>-13</td>
       <td>0</td>
     </tr>
   </tbody>

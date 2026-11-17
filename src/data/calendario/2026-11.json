@@ -22,14 +22,14 @@
       "type": "kings",
       "label": "G3X × DesimpaiN",
       "href": "/g3x/resultados-kings",
-      "done": false
+      "done": true
     },
     {
       "day": 10,
       "type": "kings",
       "label": "Kings R4",
       "href": "/g3x/resultados-kings",
-      "done": false
+      "done": true
     },
     {
       "day": 15,
@@ -37,7 +37,7 @@
       "label": "RED Bull Ladeira",
       "href": "https://www.redbull.com/br-pt/events/red-bull-ladeira-abaixo-2026/?gad_source=1&gad_campaignid=22614775902&gbraid=0AAAAA-KSaldhtldUaDrcwrpIkOt70ecQL&gclid=Cj0KCQiA77DXBhCHARIsAHf2MNrJqInlM7iHz3Tzl8-9p1AP5rPud3GCGxqq_f_qHQbi8MySA3FoiYgaAv-fEALw_wcB",
       "external": true,
-      "done": false
+      "done": true
     },
     {
       "day": 15,
@@ -45,7 +45,7 @@
       "label": "Tribo Tour: Edição Miami",
       "href": "https://www.instagram.com/reels/Dffql3is2A3/",
       "external": true,
-      "done": false
+      "done": true
     },
     {
       "day": 16,
@@ -53,7 +53,7 @@
       "label": "Tribo Tour: Edição Miami",
       "href": "https://www.instagram.com/reels/Dffql3is2A3/",
       "external": true,
-      "done": false
+      "done": true
     },
     {
       "day": 17,
@@ -76,14 +76,14 @@
       "type": "kings",
       "label": "G3X × Capim",
       "href": "/g3x/resultados-kings",
-      "done": false
+      "done": true
     },
     {
       "day": 17,
       "type": "kings",
       "label": "Kings R5",
       "href": "/g3x/resultados-kings",
-      "done": false
+      "done": true
     },
     {
       "day": 22,
